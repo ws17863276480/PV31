@@ -16,6 +16,14 @@ TCMat_C matToTCMat_C(const cv::Mat& mat) {
 int main() {
     // 设置控制台输出代码页为 UTF-8 (CP_UTF8 = 65001)
     SetConsoleOutputCP(CP_UTF8);
+    
+    // 显示版本信息
+    std::cout << "激光线检测库版本: " << CLidarLineDetector::getVersionString() << std::endl;
+    std::cout << "版本号: " 
+              << CLidarLineDetector::getVersionMajor() << "."
+              << CLidarLineDetector::getVersionMinor() << "."
+              << CLidarLineDetector::getVersionPatch() << std::endl;
+
     // 创建 CLidarLineDetector 实例
     CLidarLineDetector* detector = CLidarLineDetector_new();
 
@@ -92,4 +100,4 @@ int main() {
     CLidarLineDetector_delete(detector);
 
     return 0;
-}
+}    

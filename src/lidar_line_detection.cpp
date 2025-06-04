@@ -1,93 +1,43 @@
-#include <opencv2/opencv.hpp>
+#include "lidar_line_detection.h"
 #include <iostream>
-#include <vector>
 #include <fstream>
-#include <string>
 #include <ctime>
 #include <cstdint>
 #include <cmath>
 
-// 宏定义（在实现文件中使用导出标记）
-#ifdef _WIN32
-    #define Smpclass_API __declspec(dllexport)
-#else
-    #define Smpclass_API
-#endif
-
 using namespace cv;
 using namespace std;
 
-// 错误码枚举
-enum class ErrorCode {
-    SUCCESS = 0,
-    IMAGE_LOAD_FAILED = 1,
-    CONFIG_LOAD_FAILED = 2,
-    ROI_INVALID = 3,
-    LINE_DETECTION_FAILED = 4,
-    IMAGE_SAVE_FAILED = 5,
-    BITMAP_CONVERSION_FAILED = 6
-};
-
-// C接口数据结构
-#pragma pack(push, 1)
-struct TCMat_C {
-    int rows;
-    int cols;
-    int type;
-    void* data;
-};
-
-struct TROIConfig_C {
-    int x;
-    int y;
-    int width;
-    int height;
-};
-
-struct TLidarLineResult_C {
-    bool line_detected;
-    float line_angle; // 直线角度（弧度）
-    char image_path[256];
-    int error_code; // 修正为int类型
-};
-
-struct TTargetConfig_C {
-    float center_x;
-    float center_y;
-    float tolerance; // 允许的像素偏差
-};
-
-struct TargetMovementResult_C {
-    int is_stable;
-    float dx;
-    float dy;
-    float distance;
-    int error_code;
-    char message[256];
-};
-#pragma pack(pop)
-
-// C++ 实现部分
 namespace LidarLineDetector {
 
-struct ROI {
-    int x;
-    int y;
-    int width;
-    int height;
-};
+// 版本信息实现
+static const char* versionString = "1.0.0";
 
-struct LidarLineResult {
-    bool line_detected;
-    float line_angle;
-    string image_path;
-    ErrorCode error_code;
-};
+VersionInfo getVersionInfo() {
+    return {
+        LIDAR_LINE_DETECTION_VERSION_MAJOR,
+        LIDAR_LINE_DETECTION_VERSION_MINOR,
+        LIDAR_LINE_DETECTION_VERSION_PATCH,
+        versionString
+    };
+}
 
-struct TargetConfig {
-    Point2f expected_center;
-    float tolerance;
-};
+const char* getVersionString() {
+    return versionString;
+}
+
+int getVersionMajor() {
+    return LIDAR_LINE_DETECTION_VERSION_MAJOR;
+}
+
+int getVersionMinor() {
+    return LIDAR_LINE_DETECTION_VERSION_MINOR;
+}
+
+int getVersionPatch() {
+    return LIDAR_LINE_DETECTION_VERSION_PATCH;
+}
+
 
 // 读取ROI配置文件
 ErrorCode readROIFromConfig(const string& configPath, ROI& roi) {
@@ -340,53 +290,63 @@ TargetMovementResult_C checkCameraMovement(const Mat& image, const TargetConfig&
 
 } // namespace LidarLineDetector
 
-// 封装类定义
-class CLidarLineDetector {
-private:
-    LidarLineDetector::ROI m_roi;
-    string m_sn, m_outputDir;
+// 封装类实现
+ErrorCode CLidarLineDetector::initialize(const char* configPath) {
+    return LidarLineDetector::readROIFromConfig(configPath, m_roi);
+}
 
-public:
-    CLidarLineDetector() = default;
-    ~CLidarLineDetector() = default;
+void CLidarLineDetector::setROI(int x, int y, int width, int height) { m_roi = {x, y, width, height}; }
+void CLidarLineDetector::setSn(const char* sn) { m_sn = sn ? sn : ""; }
+void CLidarLineDetector::setOutputDir(const char* outputDir) { m_outputDir = outputDir ? outputDir : ""; }
 
-    ErrorCode initialize(const char* configPath) {
-        return LidarLineDetector::readROIFromConfig(configPath, m_roi);
-    }
+TLidarLineResult_C CLidarLineDetector::detect(const TCMat_C image) {
+    Mat image_cpp(image.rows, image.cols, image.type, image.data);
+    auto result = LidarLineDetector::detect(image_cpp, m_roi, m_sn, m_outputDir);
+    
+    TLidarLineResult_C result_c;
+    result_c.line_detected = result.line_detected;
+    result_c.line_angle = result.line_angle;
+    snprintf(result_c.image_path, sizeof(result_c.image_path), "%s", result.image_path.c_str());
+    result_c.error_code = static_cast<int>(result.error_code);
+    return result_c;
+}
 
-    void setROI(int x, int y, int width, int height) { m_roi = {x, y, width, height}; }
-    void setSn(const char* sn) { m_sn = sn ? sn : ""; }
-    void setOutputDir(const char* outputDir) { m_outputDir = outputDir ? outputDir : ""; }
+ErrorCode CLidarLineDetector::loadTargetConfig(const char* configPath, LidarLineDetector::TargetConfig& config) {
+    return LidarLineDetector::loadTargetConfig(configPath, config);
+}
 
-    // 修复：正确初始化返回结构体
-    TLidarLineResult_C detect(const TCMat_C image) {
-        Mat image_cpp(image.rows, image.cols, image.type, image.data);
-        auto result = LidarLineDetector::detect(image_cpp, m_roi, m_sn, m_outputDir);
-        
-        TLidarLineResult_C result_c;
-        result_c.line_detected = result.line_detected;
-        result_c.line_angle = result.line_angle;
-        snprintf(result_c.image_path, sizeof(result_c.image_path), "%s", result.image_path.c_str());
-        result_c.error_code = static_cast<int>(result.error_code);
-        return result_c;
-    }
+TargetMovementResult_C CLidarLineDetector::checkCameraStability(const TCMat_C image, const TTargetConfig_C config) {
+    Mat image_cpp(image.rows, image.cols, image.type, image.data);
+    LidarLineDetector::TargetConfig internalConfig{
+        Point2f(config.center_x, config.center_y),
+        config.tolerance
+    };
+    Mat displayImage;
+    return LidarLineDetector::checkCameraMovement(image_cpp, internalConfig, displayImage);
+}
+// 版本信息实现
+VersionInfo CLidarLineDetector::getVersionInfo() {
+    return LidarLineDetector::getVersionInfo();
+}
 
-    ErrorCode loadTargetConfig(const char* configPath, LidarLineDetector::TargetConfig& config) {
-        return LidarLineDetector::loadTargetConfig(configPath, config);
-    }
+const char* CLidarLineDetector::getVersionString() {
+    return LidarLineDetector::getVersionString();
+}
 
-    TargetMovementResult_C checkCameraStability(const TCMat_C image, const TTargetConfig_C config) {
-        Mat image_cpp(image.rows, image.cols, image.type, image.data);
-        LidarLineDetector::TargetConfig internalConfig{
-            Point2f(config.center_x, config.center_y),
-            config.tolerance
-        };
-        Mat displayImage;
-        return LidarLineDetector::checkCameraMovement(image_cpp, internalConfig, displayImage);
-    }
-};
+int CLidarLineDetector::getVersionMajor() {
+    return LidarLineDetector::getVersionMajor();
+}
 
-// C 接口定义
+int CLidarLineDetector::getVersionMinor() {
+    return LidarLineDetector::getVersionMinor();
+}
+
+int CLidarLineDetector::getVersionPatch() {
+    return LidarLineDetector::getVersionPatch();
+}
+
+
+// C 接口实现
 extern "C" {
     Smpclass_API CLidarLineDetector* CLidarLineDetector_new() {
         return new CLidarLineDetector();
@@ -430,4 +390,25 @@ extern "C" {
     Smpclass_API TargetMovementResult_C CLidarLineDetector_checkCameraStability(CLidarLineDetector* instance, const TCMat_C image, const TTargetConfig_C config) {
         return instance->checkCameraStability(image, config);
     }
-}
+
+     // 版本信息C接口实现
+    Smpclass_API VersionInfo LidarLineDetector_GetVersionInfo() {
+        return LidarLineDetector::getVersionInfo();
+    }
+
+    Smpclass_API const char* LidarLineDetector_GetVersionString() {
+        return LidarLineDetector::getVersionString();
+    }
+
+    Smpclass_API int LidarLineDetector_GetVersionMajor() {
+        return LidarLineDetector::getVersionMajor();
+    }
+
+    Smpclass_API int LidarLineDetector_GetVersionMinor() {
+        return LidarLineDetector::getVersionMinor();
+    }
+
+    Smpclass_API int LidarLineDetector_GetVersionPatch() {
+        return LidarLineDetector::getVersionPatch();
+    }
+}    

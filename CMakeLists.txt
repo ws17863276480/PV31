@@ -12,8 +12,9 @@ find_package(OpenCV REQUIRED)
 
 # 添加头文件搜索路径
 include_directories(
+    include
     ${OpenCV_INCLUDE_DIRS}
-    ${CMAKE_CURRENT_SOURCE_DIR}/include  # 添加 include 目录到搜索路径
+    ${CMAKE_SOURCE_DIR}
 )
 
 # 添加可执行文件

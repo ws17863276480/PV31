@@ -3,6 +3,7 @@
 
 CMakeFiles/LidarLineDetection.dir/src/lidar_line_detection.cpp.obj
  D:/OpenCV/Code/PV31/src/lidar_line_detection.cpp
+ D:/OpenCV/Code/PV31/include/lidar_line_detection.h
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/calib3d.hpp
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/core.hpp
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/core/affine.hpp

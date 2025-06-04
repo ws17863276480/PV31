@@ -1,20 +1,14 @@
-#pragma once
+#ifndef LIDAR_LINE_DETECTION_H
+#define LIDAR_LINE_DETECTION_H
 
 #include <opencv2/opencv.hpp>
-#include <iostream>
-#include <vector>
-#include <fstream>
 #include <string>
-#include <ctime>
-#include <cstdint>
-#include <cmath>
+#include <vector>
 
-// 宏定义（在实现文件中使用导出标记）
-#ifdef _WIN32
-    #define Smpclass_API __declspec(dllexport)
-#else
-    #define Smpclass_API
-#endif
+// 版本信息
+#define LIDAR_LINE_DETECTION_VERSION_MAJOR 1
+#define LIDAR_LINE_DETECTION_VERSION_MINOR 0
+#define LIDAR_LINE_DETECTION_VERSION_PATCH 0
 
 // 错误码枚举
 enum class ErrorCode {
@@ -25,6 +19,14 @@ enum class ErrorCode {
     LINE_DETECTION_FAILED = 4,
     IMAGE_SAVE_FAILED = 5,
     BITMAP_CONVERSION_FAILED = 6
+};
+
+// 版本信息结构 - 移至错误码定义之后，确保所有依赖都已定义
+struct VersionInfo {
+    int major;
+    int minor;
+    int patch;
+    const char* versionString;
 };
 
 // C接口数据结构
@@ -66,19 +68,77 @@ struct TargetMovementResult_C {
 };
 #pragma pack(pop)
 
+// 宏定义（在实现文件中使用导出标记）
+#ifdef _WIN32
+    #define Smpclass_API __declspec(dllexport)
+#else
+    #define Smpclass_API
+#endif
+
+// C++ 实现部分
+namespace LidarLineDetector {
+
+struct ROI {
+    int x;
+    int y;
+    int width;
+    int height;
+};
+
+struct LidarLineResult {
+    bool line_detected;
+    float line_angle;
+    std::string image_path;
+    ErrorCode error_code;
+};
+
+struct TargetConfig {
+    cv::Point2f expected_center;
+    float tolerance;
+};
+
+// 版本信息函数 - 移至命名空间内
+VersionInfo getVersionInfo();
+const char* getVersionString();
+int getVersionMajor();
+int getVersionMinor();
+int getVersionPatch();
+
+// 函数声明
+ErrorCode readROIFromConfig(const std::string& configPath, ROI& roi);
+std::string generateFileName(const std::string& basePath, const std::string& sn);
+bool detectLidarLine(const cv::Mat& inputImage, const ROI& roi, float& lineAngle);
+LidarLineResult detect(const cv::Mat& image, const ROI& roi, const std::string& sn, const std::string& outputDir);
+ErrorCode loadTargetConfig(const std::string& configPath, TargetConfig& config);
+ErrorCode detectTargetCenter(const cv::Mat& image, cv::Point2f& outCenter, cv::Mat& displayImage);
+TargetMovementResult_C checkCameraMovement(const cv::Mat& image, const TargetConfig& config, cv::Mat& displayImage);
+
+} // namespace LidarLineDetector
+
 // 封装类定义
 class CLidarLineDetector {
+private:
+    LidarLineDetector::ROI m_roi;
+    std::string m_sn, m_outputDir;
+
 public:
-    CLidarLineDetector();
-    ~CLidarLineDetector();
+    CLidarLineDetector() = default;
+    ~CLidarLineDetector() = default;
 
     ErrorCode initialize(const char* configPath);
     void setROI(int x, int y, int width, int height);
     void setSn(const char* sn);
     void setOutputDir(const char* outputDir);
     TLidarLineResult_C detect(const TCMat_C image);
-    ErrorCode loadTargetConfig(const char* configPath, TTargetConfig_C* config);
+    ErrorCode loadTargetConfig(const char* configPath, LidarLineDetector::TargetConfig& config);
     TargetMovementResult_C checkCameraStability(const TCMat_C image, const TTargetConfig_C config);
+    
+    // 版本信息接口 - 添加导出标记
+    static Smpclass_API VersionInfo getVersionInfo();
+    static Smpclass_API const char* getVersionString();
+    static Smpclass_API int getVersionMajor();
+    static Smpclass_API int getVersionMinor();
+    static Smpclass_API int getVersionPatch();
 };
 
 // C 接口定义
@@ -92,4 +152,13 @@ extern "C" {
     Smpclass_API TLidarLineResult_C CLidarLineDetector_detect(CLidarLineDetector* instance, const TCMat_C image);
     Smpclass_API int CLidarLineDetector_loadTargetConfig(CLidarLineDetector* instance, const char* configPath, TTargetConfig_C* config);
     Smpclass_API TargetMovementResult_C CLidarLineDetector_checkCameraStability(CLidarLineDetector* instance, const TCMat_C image, const TTargetConfig_C config);
+    
+    // 版本信息C接口
+    Smpclass_API VersionInfo LidarLineDetector_GetVersionInfo();
+    Smpclass_API const char* LidarLineDetector_GetVersionString();
+    Smpclass_API int LidarLineDetector_GetVersionMajor();
+    Smpclass_API int LidarLineDetector_GetVersionMinor();
+    Smpclass_API int LidarLineDetector_GetVersionPatch();
 }
+
+#endif // LIDAR_LINE_DETECTION_H    
