@@ -2,7 +2,7 @@
 1.cmake -G "MinGW Makefiles" -DCMAKE_C_COMPILER=D:/openCV/mingw64-8.1.0/bin/gcc.exe -DCMAKE_CXX_COMPILER=D:/openCV/mingw64-8.1.0/bin/g++.exe -DOpenCV_DIR=D:/openCV/OpenCV-MinGW-Build-4.5.2/x64/mingw/lib ..
 2.mingw32-make
 
-git规范：下面是对代码修改后执行流程的分步说明：
+下面是对代码修改后执行流程的分步说明：
 
 ### 1. 在本地其它分支上commit
 ```bash
