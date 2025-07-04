@@ -43,7 +43,7 @@ int main() {
     CLidarLineDetector_setOutputDir(detector, outputDir);
 
     // 读取导航线测试图像
-    cv::Mat testImage = cv::imread("D:\\OpenCV\\Code\\PV31\\image\\pitch_true.jpg");
+    cv::Mat testImage = cv::imread("D:\\OpenCV\\Code\\PV31\\image\\111.png");
     if (testImage.empty()) {
         std::cerr << "无法加载测试图像" << std::endl;
         CLidarLineDetector_delete(detector);
