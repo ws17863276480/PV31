@@ -1,0 +1,3 @@
+target_center_x: 961.372
+target_center_y: 571.996
+max_deviation: 5

@@ -1,0 +1,184 @@
+[2025-07-11 09:58:28.990] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 09:58:28.990] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=50.0
+[2025-07-11 09:58:28.990] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 09:58:28.990] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 09:58:28.992] [camera_logger] [warning] 检测到的标靶矩形数量不正确: 0 (期望4个)
+[2025-07-11 09:58:28.992] [camera_logger] [error] 标靶检测失败，错误码: 1
+[2025-07-11 10:06:31.719] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 10:06:31.719] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 10:06:31.719] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 10:06:31.719] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 10:06:31.721] [camera_logger] [warning] 检测到的标靶矩形数量不正确: 1 (期望4个)
+[2025-07-11 10:06:31.721] [camera_logger] [error] 标靶检测失败，错误码: 1
+[2025-07-11 10:21:05.713] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 10:21:05.720] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 10:21:05.720] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 10:21:05.720] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 10:21:05.720] [camera_logger] [warning] 检测到的标靶矩形数量不正确: 1 (期望4个)
+[2025-07-11 10:21:05.720] [camera_logger] [error] 标靶检测失败，错误码: 7
+[2025-07-11 10:33:01.381] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 10:33:01.381] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 10:33:01.381] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 10:33:01.381] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 10:33:01.381] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 10:33:01.381] [camera_logger] [warning] 未能检测到4个标靶方块，找到: 0
+[2025-07-11 10:33:01.381] [camera_logger] [error] 标靶检测失败，错误码: 7
+[2025-07-11 10:35:14.300] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 10:35:14.301] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 10:35:14.301] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 10:35:14.301] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 10:35:14.301] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 10:35:14.301] [camera_logger] [warning] 未能检测到4个标靶方块，找到: 0
+[2025-07-11 10:35:14.301] [camera_logger] [error] 标靶检测失败，错误码: 7
+[2025-07-11 11:04:04.995] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 11:04:04.995] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 11:04:04.995] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 11:04:04.995] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 11:04:04.995] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 11:04:04.995] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 11:04:04.995] [camera_logger] [info] 标靶中心点检测成功: (961.3, 571.9)
+[2025-07-11 11:04:04.995] [camera_logger] [info] 相机移动检测完成: 稳定 (距离: 0.1px)
+[2025-07-11 11:05:32.924] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 11:05:32.924] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 11:05:32.924] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 11:05:32.924] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 11:05:32.924] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 11:05:32.930] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 11:05:32.930] [camera_logger] [info] 标靶中心点检测成功: (961.4, 572.0)
+[2025-07-11 11:05:32.930] [camera_logger] [info] 相机移动检测完成: 稳定 (距离: 0.0px)
+[2025-07-11 11:13:28.031] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 11:13:28.031] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 11:13:28.031] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 11:13:28.031] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 11:13:28.031] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 11:13:28.042] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 11:13:28.042] [camera_logger] [info] 标靶中心点检测成功: (961.4, 572.0)
+[2025-07-11 11:13:28.042] [camera_logger] [info] 相机移动检测完成: 稳定 (距离: 0.0px)
+[2025-07-11 11:13:55.182] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 11:13:55.182] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 11:13:55.182] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 11:13:55.182] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 11:13:55.182] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 11:13:55.182] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 11:13:55.182] [camera_logger] [info] 标靶中心点检测成功: (961.4, 572.0)
+[2025-07-11 11:13:55.182] [camera_logger] [info] 相机移动检测完成: 稳定 (距离: 0.0px)
+[2025-07-11 11:18:24.976] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 11:18:24.981] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 11:18:24.981] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 11:18:24.981] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 11:18:24.982] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 11:18:24.983] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 11:18:24.983] [camera_logger] [info] 标靶中心点检测成功: (961.4, 572.0)
+[2025-07-11 11:18:24.983] [camera_logger] [info] 相机移动检测完成: 稳定 (距离: 0.0px)
+[2025-07-11 11:19:34.906] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 11:19:34.906] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 11:19:34.906] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 11:19:34.906] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 11:19:34.907] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 11:19:34.910] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 11:19:34.910] [camera_logger] [info] 标靶中心点检测成功: (961.4, 572.0)
+[2025-07-11 11:19:34.910] [camera_logger] [info] 相机移动检测完成: 稳定 (距离: 0.0px)
+[2025-07-11 11:20:15.431] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 11:20:15.431] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 11:20:15.431] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 11:20:15.431] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 11:20:15.433] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 11:20:15.435] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 11:20:15.435] [camera_logger] [info] 标靶中心点检测成功: (961.4, 572.0)
+[2025-07-11 11:20:15.435] [camera_logger] [info] 相机移动检测完成: 稳定 (距离: 0.0px)
+[2025-07-11 11:27:14.155] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 11:27:14.155] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 11:27:14.155] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 11:27:14.155] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 11:27:14.155] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 11:27:14.164] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 11:27:14.164] [camera_logger] [info] 标靶中心点检测成功: (961.4, 572.0)
+[2025-07-11 11:27:14.164] [camera_logger] [info] 相机移动检测完成: 稳定 (距离: 0.0px)
+[2025-07-11 11:31:27.493] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 11:31:27.493] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 11:31:27.493] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 11:31:27.493] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 11:31:27.494] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 11:31:27.496] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 11:31:27.497] [camera_logger] [info] 标靶中心点检测成功: (961.4, 572.0)
+[2025-07-11 11:31:27.497] [camera_logger] [info] 相机移动检测完成: 稳定 (距离: 0.0px)
+[2025-07-11 11:31:41.377] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 11:31:41.377] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 11:31:41.377] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 11:31:41.377] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 11:31:41.381] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 11:31:41.381] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 11:31:41.381] [camera_logger] [info] 标靶中心点检测成功: (961.4, 572.0)
+[2025-07-11 11:31:41.381] [camera_logger] [info] 相机移动检测完成: 稳定 (距离: 0.0px)
+[2025-07-11 11:39:25.992] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 11:39:25.992] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 11:39:25.992] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 11:39:25.992] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 11:39:25.997] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 11:39:25.998] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 11:39:25.998] [camera_logger] [info] 标靶中心点检测成功: (961.4, 572.0)
+[2025-07-11 11:39:25.998] [camera_logger] [info] 相机移动检测完成: 稳定 (距离: 0.0px)
+[2025-07-11 11:41:44.848] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 11:41:44.848] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 11:41:44.848] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 11:41:44.848] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 11:41:44.848] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 11:41:44.851] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 11:41:44.851] [camera_logger] [info] 标靶中心点检测成功: (961.3, 571.9)
+[2025-07-11 11:41:44.851] [camera_logger] [info] 相机移动检测完成: 稳定 (距离: 0.1px)
+[2025-07-11 11:43:33.675] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 11:43:33.675] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 11:43:33.675] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 11:43:33.675] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 11:43:33.675] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 11:43:33.678] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 11:43:33.678] [camera_logger] [info] 标靶中心点检测成功: (961.4, 572.0)
+[2025-07-11 11:43:33.678] [camera_logger] [info] 相机移动检测完成: 稳定 (距离: 0.0px)
+[2025-07-11 11:52:11.499] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 11:52:11.499] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 11:52:11.499] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 11:52:11.499] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 11:52:11.500] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 11:52:11.502] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 11:52:11.503] [camera_logger] [info] 标靶中心点检测成功: (961.4, 572.0)
+[2025-07-11 11:52:11.503] [camera_logger] [info] 相机移动检测完成: 稳定 (距离: 0.0px)
+[2025-07-11 11:53:47.962] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 11:53:47.963] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 11:53:47.963] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 11:53:47.963] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 11:53:47.964] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 11:53:47.966] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 11:53:47.966] [camera_logger] [info] 标靶中心点检测成功: (961.4, 572.0)
+[2025-07-11 11:53:47.966] [camera_logger] [info] 相机移动检测完成: 稳定 (距离: 0.0px)
+[2025-07-11 11:54:50.909] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 11:54:50.909] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 11:54:50.909] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 11:54:50.909] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 11:54:50.909] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 11:54:50.909] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 11:54:50.909] [camera_logger] [info] 标靶中心点检测成功: (961.4, 572.0)
+[2025-07-11 11:54:50.909] [camera_logger] [info] 相机移动检测完成: 稳定 (距离: 0.0px)
+[2025-07-11 11:56:56.453] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 11:56:56.457] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 11:56:56.457] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 11:56:56.457] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 11:56:56.457] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 11:56:56.458] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 11:56:56.458] [camera_logger] [info] 标靶中心点检测成功: (961.4, 572.0)
+[2025-07-11 11:56:56.458] [camera_logger] [info] 相机移动检测完成: 稳定 (距离: 0.0px)
+[2025-07-11 14:38:44.928] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 14:38:44.928] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 14:38:44.928] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 14:38:44.928] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 14:38:44.938] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 14:38:44.940] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 14:38:44.940] [camera_logger] [info] 标靶中心点检测成功: (961.4, 572.0)
+[2025-07-11 14:38:44.940] [camera_logger] [info] 相机移动检测完成: 稳定 (距离: 0.0px)
+[2025-07-11 14:49:07.097] [camera_logger] [info] 开始读取标靶配置文件: D:\OpenCV\Code\PV31\config\target_config.txt
+[2025-07-11 14:49:07.097] [camera_logger] [info] 标靶配置读取成功: center=(961.4, 572.0), tolerance=5.0
+[2025-07-11 14:49:07.097] [camera_logger] [info] 开始相机移动检测
+[2025-07-11 14:49:07.097] [camera_logger] [info] 开始标靶中心点检测
+[2025-07-11 14:49:07.097] [camera_logger] [info] 开始检测标靶四个角落的黑色方块
+[2025-07-11 14:49:07.097] [camera_logger] [info] 成功检测到4个标靶方块
+[2025-07-11 14:49:07.097] [camera_logger] [info] 标靶中心点检测成功: (811.2, 426.9)
+[2025-07-11 14:49:07.097] [camera_logger] [info] 相机移动检测完成: 移动 (距离: 208.8px)

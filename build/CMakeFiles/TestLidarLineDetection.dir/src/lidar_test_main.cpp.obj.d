@@ -97,6 +97,10 @@ CMakeFiles/TestLidarLineDetection.dir/src/lidar_test_main.cpp.obj: \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string_view \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/string_view.tcc \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
  D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/stdlib.h \
@@ -106,7 +110,6 @@ CMakeFiles/TestLidarLineDetection.dir/src/lidar_test_main.cpp.obj: \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
- D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
@@ -341,7 +344,6 @@ CMakeFiles/TestLidarLineDetection.dir/src/lidar_test_main.cpp.obj: \
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/core.hpp \
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/core/cvdef.h \
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/core/version.hpp \
- D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/core/hal/interface.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstddef \
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/core/cv_cpu_dispatch.h \
@@ -361,6 +363,20 @@ CMakeFiles/TestLidarLineDetection.dir/src/lidar_test_main.cpp.obj: \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstring \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
  D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/math.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/specfun.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/gamma.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_util.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/bessel_function.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_util.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/beta_function.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/ell_integral.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/exp_integral.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/hypergeometric.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/legendre_function.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/modified_bessel_func.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_hermite.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_laguerre.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/riemann_zeta.tcc \
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/core/cvstd_wrapper.hpp \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/memory \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
@@ -407,6 +423,13 @@ CMakeFiles/TestLidarLineDetection.dir/src/lidar_test_main.cpp.obj: \
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/core/utility.hpp \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/functional \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_function.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/unordered_map \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable_policy.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/node_handle.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/optional \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/enable_special_members.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unordered_map.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/mutex \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
@@ -477,10 +500,7 @@ CMakeFiles/TestLidarLineDetection.dir/src/lidar_test_main.cpp.obj: \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/codecvt.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unique_ptr.h \
- D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/unordered_map \
- D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable.h \
- D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable_policy.h \
- D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unordered_map.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/quoted_string.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/math.h \
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/flann/autotuned_index.h \
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/flann/ground_truth.h \
@@ -526,4 +546,6 @@ CMakeFiles/TestLidarLineDetection.dir/src/lidar_test_main.cpp.obj: \
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/video.hpp \
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/video/tracking.hpp \
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/video/background_segm.hpp \
- D:/OpenCV/Code/PV31/include/lidar_line_detection.h
+ D:/OpenCV/Code/PV31/include/lidar_line_detection.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/direct.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/io.h

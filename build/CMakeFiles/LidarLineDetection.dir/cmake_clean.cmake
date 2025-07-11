@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/LidarLineDetection.dir/src/camera_stability_detection.cpp.obj"
+  "CMakeFiles/LidarLineDetection.dir/src/camera_stability_detection.cpp.obj.d"
   "CMakeFiles/LidarLineDetection.dir/src/lidar_line_detection.cpp.obj"
   "CMakeFiles/LidarLineDetection.dir/src/lidar_line_detection.cpp.obj.d"
   "libLidarLineDetection.dll"

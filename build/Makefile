@@ -141,11 +141,39 @@ LidarLineDetection/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LidarLineDetection.dir\build.make CMakeFiles/LidarLineDetection.dir/build
 .PHONY : LidarLineDetection/fast
 
+src/camera_stability_detection.obj: src/camera_stability_detection.cpp.obj
+.PHONY : src/camera_stability_detection.obj
+
+# target to build an object file
+src/camera_stability_detection.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestLidarLineDetection.dir\build.make CMakeFiles/TestLidarLineDetection.dir/src/camera_stability_detection.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LidarLineDetection.dir\build.make CMakeFiles/LidarLineDetection.dir/src/camera_stability_detection.cpp.obj
+.PHONY : src/camera_stability_detection.cpp.obj
+
+src/camera_stability_detection.i: src/camera_stability_detection.cpp.i
+.PHONY : src/camera_stability_detection.i
+
+# target to preprocess a source file
+src/camera_stability_detection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestLidarLineDetection.dir\build.make CMakeFiles/TestLidarLineDetection.dir/src/camera_stability_detection.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LidarLineDetection.dir\build.make CMakeFiles/LidarLineDetection.dir/src/camera_stability_detection.cpp.i
+.PHONY : src/camera_stability_detection.cpp.i
+
+src/camera_stability_detection.s: src/camera_stability_detection.cpp.s
+.PHONY : src/camera_stability_detection.s
+
+# target to generate assembly for a file
+src/camera_stability_detection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestLidarLineDetection.dir\build.make CMakeFiles/TestLidarLineDetection.dir/src/camera_stability_detection.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LidarLineDetection.dir\build.make CMakeFiles/LidarLineDetection.dir/src/camera_stability_detection.cpp.s
+.PHONY : src/camera_stability_detection.cpp.s
+
 src/lidar_line_detection.obj: src/lidar_line_detection.cpp.obj
 .PHONY : src/lidar_line_detection.obj
 
 # target to build an object file
 src/lidar_line_detection.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestLidarLineDetection.dir\build.make CMakeFiles/TestLidarLineDetection.dir/src/lidar_line_detection.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LidarLineDetection.dir\build.make CMakeFiles/LidarLineDetection.dir/src/lidar_line_detection.cpp.obj
 .PHONY : src/lidar_line_detection.cpp.obj
 
@@ -154,6 +182,7 @@ src/lidar_line_detection.i: src/lidar_line_detection.cpp.i
 
 # target to preprocess a source file
 src/lidar_line_detection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestLidarLineDetection.dir\build.make CMakeFiles/TestLidarLineDetection.dir/src/lidar_line_detection.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LidarLineDetection.dir\build.make CMakeFiles/LidarLineDetection.dir/src/lidar_line_detection.cpp.i
 .PHONY : src/lidar_line_detection.cpp.i
 
@@ -162,6 +191,7 @@ src/lidar_line_detection.s: src/lidar_line_detection.cpp.s
 
 # target to generate assembly for a file
 src/lidar_line_detection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestLidarLineDetection.dir\build.make CMakeFiles/TestLidarLineDetection.dir/src/lidar_line_detection.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LidarLineDetection.dir\build.make CMakeFiles/LidarLineDetection.dir/src/lidar_line_detection.cpp.s
 .PHONY : src/lidar_line_detection.cpp.s
 
@@ -199,6 +229,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... LidarLineDetection
 	@echo ... TestLidarLineDetection
+	@echo ... src/camera_stability_detection.obj
+	@echo ... src/camera_stability_detection.i
+	@echo ... src/camera_stability_detection.s
 	@echo ... src/lidar_line_detection.obj
 	@echo ... src/lidar_line_detection.i
 	@echo ... src/lidar_line_detection.s

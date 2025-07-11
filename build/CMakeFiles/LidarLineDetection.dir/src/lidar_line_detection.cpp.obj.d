@@ -47,7 +47,6 @@ CMakeFiles/LidarLineDetection.dir/src/lidar_line_detection.cpp.obj: \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
- D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
@@ -57,6 +56,7 @@ CMakeFiles/LidarLineDetection.dir/src/lidar_line_detection.cpp.obj: \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
@@ -116,10 +116,12 @@ CMakeFiles/LidarLineDetection.dir/src/lidar_line_detection.cpp.obj: \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string_view \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/string_view.tcc \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
- D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/core/base.hpp \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/climits \
@@ -136,6 +138,20 @@ CMakeFiles/LidarLineDetection.dir/src/lidar_line_detection.cpp.obj: \
  D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/sec_api/string_s.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
  D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/math.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/specfun.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/gamma.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_util.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/bessel_function.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_util.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/beta_function.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/ell_integral.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/exp_integral.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/hypergeometric.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/legendre_function.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/modified_bessel_func.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_hermite.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_laguerre.tcc \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/riemann_zeta.tcc \
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/core/cvstd_wrapper.hpp \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/memory \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
@@ -203,6 +219,13 @@ CMakeFiles/LidarLineDetection.dir/src/lidar_line_detection.cpp.obj: \
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/core/utility.hpp \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/functional \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_function.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/unordered_map \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable_policy.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/node_handle.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/optional \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/enable_special_members.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unordered_map.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/mutex \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
@@ -278,10 +301,7 @@ CMakeFiles/LidarLineDetection.dir/src/lidar_line_detection.cpp.obj: \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/codecvt.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unique_ptr.h \
- D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/unordered_map \
- D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable.h \
- D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable_policy.h \
- D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unordered_map.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/quoted_string.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/math.h \
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/flann/autotuned_index.h \
  D:/OpenCV/OpenCV-MinGW-Build-4.5.2/include/opencv2/flann/ground_truth.h \
@@ -330,4 +350,204 @@ CMakeFiles/LidarLineDetection.dir/src/lidar_line_detection.cpp.obj: \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/fstream \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
  D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
- D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/fstream.tcc
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/fstream.tcc \
+ D:/OpenCV/Code/PV31/include/spdlog/spdlog.h \
+ D:/OpenCV/Code/PV31/include/spdlog/common.h \
+ D:/OpenCV/Code/PV31/include/spdlog/details/null_mutex.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/atomic \
+ D:/OpenCV/Code/PV31/include/spdlog/tweakme.h \
+ D:/OpenCV/Code/PV31/include/spdlog/fmt/fmt.h \
+ D:/OpenCV/Code/PV31/include/spdlog/fmt/bundled/core.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iterator \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stream_iterator.h \
+ D:/OpenCV/Code/PV31/include/spdlog/fmt/bundled/format.h \
+ D:/OpenCV/Code/PV31/include/spdlog/fmt/bundled/core.h \
+ D:/OpenCV/Code/PV31/include/spdlog/fmt/bundled/format-inl.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/io.h \
+ D:/OpenCV/Code/PV31/include/spdlog/fmt/bundled/format.h \
+ D:/OpenCV/Code/PV31/include/spdlog/common-inl.h \
+ D:/OpenCV/Code/PV31/include/spdlog/details/registry.h \
+ D:/OpenCV/Code/PV31/include/spdlog/details/periodic_worker.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/condition_variable \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/thread \
+ D:/OpenCV/Code/PV31/include/spdlog/details/periodic_worker-inl.h \
+ D:/OpenCV/Code/PV31/include/spdlog/details/registry-inl.h \
+ D:/OpenCV/Code/PV31/include/spdlog/logger.h \
+ D:/OpenCV/Code/PV31/include/spdlog/details/backtracer.h \
+ D:/OpenCV/Code/PV31/include/spdlog/details/circular_q.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cassert \
+ D:/OpenCV/Code/PV31/include/spdlog/details/log_msg_buffer.h \
+ D:/OpenCV/Code/PV31/include/spdlog/details/log_msg.h \
+ D:/OpenCV/Code/PV31/include/spdlog/details/log_msg-inl.h \
+ D:/OpenCV/Code/PV31/include/spdlog/details/os.h \
+ D:/OpenCV/Code/PV31/include/spdlog/details/os-inl.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/sys/stat.h \
+ D:/OpenCV/Code/PV31/include/spdlog/details/windows_include.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/windows.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/sdkddkver.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/excpt.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/windef.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/minwindef.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/winapifamily.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/specstrings.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/sal.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/driverspecs.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/winnt.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/_mingw_unicode.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/apiset.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/basetsd.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/guiddef.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/x86intrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ia32intrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pmmintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/tmmintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ammintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/smmintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/popcntintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/wmmintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/immintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avxintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx2intrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512fintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512erintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512pfintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512cdintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512bwintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512dqintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlbwintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vldqintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512ifmaintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512ifmavlintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmiintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmivlintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124fmapsintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124vnniwintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2intrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2vlintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnniintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnnivlintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqvlintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512bitalgintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/shaintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/lzcntintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmiintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmi2intrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fmaintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/f16cintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/rtmintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xtestintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/cetintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/gfniintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/vaesintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/vpclmulqdqintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/movdirintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm3dnow.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/prfchwintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fma4intrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xopintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/lwpintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/tbmintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/rdseedintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fxsrintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveoptintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/sgxintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pconfigintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/adxintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clwbintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clflushoptintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavesintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavecintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mwaitxintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clzerointrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/wbnoinvdintrin.h \
+ D:/openCV/mingw64-8.1.0/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pkuintrin.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/pshpack4.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/poppack.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/pshpack4.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/pshpack2.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/poppack.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/pshpack2.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/pshpack8.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/pshpack8.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/ktmtypes.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/winbase.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/apisetcconv.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/minwinbase.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/bemapiset.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/debugapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/errhandlingapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/fibersapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/fileapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/handleapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/heapapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/ioapiset.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/interlockedapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/jobapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/libloaderapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/memoryapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/namedpipeapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/namespaceapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/processenv.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/processthreadsapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/processtopologyapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/profileapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/realtimeapiset.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/securityappcontainer.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/securitybaseapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/synchapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/sysinfoapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/systemtopologyapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/threadpoolapiset.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/threadpoollegacyapiset.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/utilapiset.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/wow64apiset.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/winerror.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/fltwinerror.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/timezoneapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/wingdi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/pshpack1.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/winuser.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/tvout.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/winnls.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/datetimeapi.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/stringapiset.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/wincon.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/winver.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/winreg.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/reason.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/winnetwk.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/wnnc.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/virtdisk.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/stralign.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/sec_api/stralign_s.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/winsvc.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/mcx.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/imm.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/share.h \
+ D:/openCV/mingw64-8.1.0/x86_64-w64-mingw32/include/direct.h \
+ D:/OpenCV/Code/PV31/include/spdlog/details/log_msg_buffer-inl.h \
+ D:/OpenCV/Code/PV31/include/spdlog/details/backtracer-inl.h \
+ D:/OpenCV/Code/PV31/include/spdlog/logger-inl.h \
+ D:/OpenCV/Code/PV31/include/spdlog/pattern_formatter.h \
+ D:/OpenCV/Code/PV31/include/spdlog/formatter.h \
+ D:/OpenCV/Code/PV31/include/spdlog/pattern_formatter-inl.h \
+ D:/OpenCV/Code/PV31/include/spdlog/details/fmt_helper.h \
+ D:/OpenCV/Code/PV31/include/spdlog/mdc.h \
+ D:/OpenCV/Code/PV31/include/spdlog/sinks/sink.h \
+ D:/OpenCV/Code/PV31/include/spdlog/sinks/sink-inl.h \
+ D:/OpenCV/Code/PV31/include/spdlog/sinks/wincolor_sink.h \
+ D:/OpenCV/Code/PV31/include/spdlog/details/console_globals.h \
+ D:/OpenCV/Code/PV31/include/spdlog/sinks/wincolor_sink-inl.h \
+ D:/OpenCV/Code/PV31/include/spdlog/details/synchronous_factory.h \
+ D:/OpenCV/Code/PV31/include/spdlog/version.h \
+ D:/OpenCV/Code/PV31/include/spdlog/spdlog-inl.h \
+ D:/OpenCV/Code/PV31/include/spdlog/sinks/basic_file_sink.h \
+ D:/OpenCV/Code/PV31/include/spdlog/details/file_helper.h \
+ D:/OpenCV/Code/PV31/include/spdlog/details/file_helper-inl.h \
+ D:/OpenCV/Code/PV31/include/spdlog/sinks/base_sink.h \
+ D:/OpenCV/Code/PV31/include/spdlog/sinks/base_sink-inl.h \
+ D:/OpenCV/Code/PV31/include/spdlog/sinks/basic_file_sink-inl.h

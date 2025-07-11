@@ -6,5 +6,5 @@ CXX_DEFINES = -DLidarLineDetection_EXPORTS
 
 CXX_INCLUDES = @CMakeFiles/LidarLineDetection.dir/includes_CXX.rsp
 
-CXX_FLAGS = -std=gnu++11
+CXX_FLAGS = -std=gnu++17
 

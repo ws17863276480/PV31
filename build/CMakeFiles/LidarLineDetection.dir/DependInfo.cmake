@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/OpenCV/Code/PV31/src/camera_stability_detection.cpp" "CMakeFiles/LidarLineDetection.dir/src/camera_stability_detection.cpp.obj" "gcc" "CMakeFiles/LidarLineDetection.dir/src/camera_stability_detection.cpp.obj.d"
   "D:/OpenCV/Code/PV31/src/lidar_line_detection.cpp" "CMakeFiles/LidarLineDetection.dir/src/lidar_line_detection.cpp.obj" "gcc" "CMakeFiles/LidarLineDetection.dir/src/lidar_line_detection.cpp.obj.d"
   )
 

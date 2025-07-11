@@ -4,15 +4,20 @@
 #include <ctime>
 #include <cstdint>
 #include <cmath>
+#include "spdlog/spdlog.h"
+#include "spdlog/sinks/basic_file_sink.h"
+#include <direct.h> // Windows下创建文件夹
 
 using namespace cv;
 using namespace std;
 
-namespace LidarLineDetector
-{
+// 将所有LidarLineDetector相关函数实现放入命名空间
+namespace LidarLineDetector {
 
     // 版本信息实现
     static const char *versionString = "1.0.0";
+
+    static std::shared_ptr<spdlog::logger> logger = spdlog::basic_logger_mt("lidar_logger", "log/lidar_line_detection.log");
 
     VersionInfo getVersionInfo()
     {
@@ -44,15 +49,15 @@ namespace LidarLineDetector
     }
 
     // 读取ROI配置文件
-    ErrorCode readROIFromConfig(const string &configPath, ROI &roi)
+    DetectionResultCode readROIFromConfig(const string &configPath, ROI &roi)
     {
-        cerr << "尝试打开的配置文件路径: " << configPath << endl;
+        logger->info("开始读取ROI配置文件: {}", configPath);
         ifstream configFile(configPath);
         if (!configFile.is_open())
         {
-            cerr << "无法打开配置文件: " << configPath << endl;
+            logger->error("无法打开配置文件: {}", configPath);
             perror("错误信息"); // 打印系统错误信息
-            return ErrorCode::CONFIG_LOAD_FAILED;
+            return DetectionResultCode::CONFIG_LOAD_FAILED;
         }
 
         string line;
@@ -84,10 +89,11 @@ namespace LidarLineDetector
         configFile.close();
 
         if (!xRead || !yRead || !widthRead || !heightRead)
-            return ErrorCode::CONFIG_LOAD_FAILED;
+            return DetectionResultCode::CONFIG_LOAD_FAILED;
         if (roi.width <= 0 || roi.height <= 0)
-            return ErrorCode::ROI_INVALID;
-        return ErrorCode::SUCCESS;
+            return DetectionResultCode::ROI_INVALID;
+        logger->info("ROI配置读取成功: x={}, y={}, w={}, h={}", roi.x, roi.y, roi.width, roi.height);
+        return DetectionResultCode::SUCCESS;
     }
 
     // 生成带时间和SN的文件名
@@ -103,91 +109,211 @@ namespace LidarLineDetector
     }
 
     // 激光线检测核心函数
-    bool detectLidarLine(const cv::Mat &inputImage, const ROI &roi, float &lineAngle, cv::Vec4f &line)
+    LidarDetectionResult detectLidarLine(const cv::Mat& image, const ROI& roi, const std::string& sn, const std::string& outputDir)
     {
+        logger->info("开始激光线检测，ROI: x={}, y={}, w={}, h={}", roi.x, roi.y, roi.width, roi.height);
+        LidarDetectionResult result;
+        result.status = DetectionResultCode::NOT_FOUND;
+        result.line_angle = 0.0f;
+        result.image_path = "";
+
         // 检查ROI是否在图像范围内
         cv::Rect roiRect(roi.x, roi.y, roi.width, roi.height);
         if (roiRect.x < 0 || roiRect.y < 0 ||
-            roiRect.x + roiRect.width > inputImage.cols ||
-            roiRect.y + roiRect.height > inputImage.rows)
+            roiRect.x + roiRect.width > image.cols ||
+            roiRect.y + roiRect.height > image.rows)
         {
-            std::cerr << "ROI超出图像范围" << std::endl;
-            return false;
+            logger->warn("ROI超出图像范围");
+            result.status = DetectionResultCode::OUT_OF_ROI;
+            // 保存失败图像
+            if (!outputDir.empty())
+            {
+                cv::Mat resultImage = image.clone();
+                cv::rectangle(resultImage, cv::Rect(roi.x, roi.y, roi.width, roi.height), cv::Scalar(0, 0, 255), 2);
+                cv::putText(resultImage, "ROI Out of Range", cv::Point(20, 30), cv::FONT_HERSHEY_SIMPLEX, 0.7, cv::Scalar(0, 0, 255), 2);
+                std::string fileName = generateFileName(outputDir + "/result", sn);
+                if (cv::imwrite(fileName, resultImage))
+                {
+                    logger->info("失败结果图像已保存: {}", fileName);
+                    result.image_path = fileName;
+                }
+            }
+            return result;
         }
-
         // 提取ROI区域
-        cv::Mat roiMat = inputImage(roiRect).clone();
+        cv::Mat roiMat = image(roiRect).clone();
         if (roiMat.empty())
         {
-            std::cerr << "提取ROI区域失败" << std::endl;
-            return false;
+            logger->error("提取ROI区域失败");
+            result.status = DetectionResultCode::OUT_OF_ROI;
+            // 保存失败图像
+            if (!outputDir.empty())
+            {
+                cv::Mat resultImage = image.clone();
+                cv::rectangle(resultImage, cv::Rect(roi.x, roi.y, roi.width, roi.height), cv::Scalar(0, 0, 255), 2);
+                cv::putText(resultImage, "ROI Extraction Failed", cv::Point(20, 30), cv::FONT_HERSHEY_SIMPLEX, 0.7, cv::Scalar(0, 0, 255), 2);
+                std::string fileName = generateFileName(outputDir + "/result", sn);
+                if (cv::imwrite(fileName, resultImage))
+                {
+                    logger->info("失败结果图像已保存: {}", fileName);
+                    result.image_path = fileName;
+                }
+            }
+            return result;
         }
-
         // 灰度化
         cv::Mat gray;
         cv::cvtColor(roiMat, gray, cv::COLOR_BGR2GRAY);
 
-        // 自适应阈值或Otsu法
-        cv::Mat binary;
-        cv::threshold(gray, binary, 0, 255, cv::THRESH_BINARY + cv::THRESH_OTSU);
-
-        // 形态学操作去噪
-        cv::Mat morph;
-        cv::morphologyEx(binary, morph, cv::MORPH_OPEN, cv::getStructuringElement(cv::MORPH_RECT, cv::Size(3, 3)));
-
-        // 边缘检测
-        cv::Mat edges;
-        cv::Canny(morph, edges, 50, 150);
-
-        // 霍夫变换检测直线
-        std::vector<cv::Vec4i> lines;
-        cv::HoughLinesP(edges, lines, 1, CV_PI / 180, 50, 80, 10);
-
-        if (lines.empty())
-        {
-            std::cerr << "未检测到直线" << std::endl;
-            return false;
-        }
-
-        // 只取每一行最亮的点
+        // 提取所有高亮点
         std::vector<cv::Point> laserPoints;
-        for (int y = 0; y < gray.rows; ++y)
-        {
-            double minVal, maxVal;
-            cv::Point minLoc, maxLoc;
-            cv::minMaxLoc(gray.row(y), &minVal, &maxVal, &minLoc, &maxLoc);
-            // 可加阈值过滤
-            if (maxVal > 200)
-            { // 200可根据实际调整
-                laserPoints.emplace_back(maxLoc.x, y);
+        for (int y = 0; y < gray.rows; ++y) {
+            for (int x = 0; x < gray.cols; ++x) {
+                if (gray.at<uchar>(y, x) > 220) { // 阈值可调
+                    laserPoints.emplace_back(x, y);
+                }
             }
         }
 
-        if (laserPoints.size() < 10)
-        { // 点太少说明检测失败
-            std::cerr << "激光点太少，检测失败" << std::endl;
-            return false;
+        // 可视化激光点
+        cv::Mat debugPoints = roiMat.clone();
+        for (const auto& pt : laserPoints) {
+            cv::circle(debugPoints, pt, 1, cv::Scalar(0, 0, 255), -1);
+        }
+        if (!outputDir.empty()) {
+            std::string debugFileName = generateFileName(outputDir + "/debug_laser_points", sn);
+            cv::imwrite(debugFileName, debugPoints);
         }
 
+        // 判据1：点数
+        if (laserPoints.size() < 10)
+        {
+            logger->warn("激光点太少，检测失败，点数: {}", laserPoints.size());
+            result.status = DetectionResultCode::NOT_FOUND;
+            // 保存失败图像
+            if (!outputDir.empty())
+            {
+                cv::Mat resultImage = image.clone();
+                cv::rectangle(resultImage, cv::Rect(roi.x, roi.y, roi.width, roi.height), cv::Scalar(0, 0, 255), 2);
+                cv::putText(resultImage, "Insufficient Laser Points: " + std::to_string(laserPoints.size()), cv::Point(20, 30), cv::FONT_HERSHEY_SIMPLEX, 0.7, cv::Scalar(0, 0, 255), 2);
+                std::string fileName = generateFileName(outputDir + "/result", sn);
+                if (cv::imwrite(fileName, resultImage))
+                {
+                    logger->info("失败结果图像已保存: {}", fileName);
+                    result.image_path = fileName;
+                }
+            }
+            return result;
+        }
+        // 用fitLine拟合直线
+        cv::Vec4f line;
         cv::fitLine(laserPoints, line, cv::DIST_L2, 0, 0.01, 0.01);
-        lineAngle = std::atan2(line[1], line[0]);
-        return true;
+        float vx = line[0], vy = line[1], x0 = line[2], y0 = line[3];
+
+        // 判据2：RMS误差
+        double sumDist2 = 0;
+        for (const auto& pt : laserPoints) {
+            double dist = std::abs(vy * (pt.x - x0) - vx * (pt.y - y0)) / std::sqrt(vx * vx + vy * vy);
+            sumDist2 += dist * dist;
+        }
+        double rms = std::sqrt(sumDist2 / laserPoints.size());
+
+        // 判据3：投影长度
+        std::vector<double> projections;
+        for (const auto& pt : laserPoints) {
+            double proj = (pt.x - x0) * vx + (pt.y - y0) * vy;
+            projections.push_back(proj);
+        }
+        auto minmax = std::minmax_element(projections.begin(), projections.end());
+        double length = *minmax.second - *minmax.first;
+        logger->warn("激光点分布不线性或长度不足，RMS: {}, 长度: {}", rms, length);
+
+        // 阈值可根据实际调整
+        if (rms > 5.0 || length < roi.width * 0.5) {
+            logger->warn("激光点分布不线性或长度不足，RMS: {}, 长度: {}", rms, length);
+            result.status = DetectionResultCode::OUT_OF_ROI;
+            // 保存失败图像
+            if (!outputDir.empty()) {
+                cv::Mat resultImage = image.clone();
+                cv::rectangle(resultImage, cv::Rect(roi.x, roi.y, roi.width, roi.height), cv::Scalar(0, 0, 255), 2);
+                std::string reason = (rms > 3.0) ? ("RMS: " + std::to_string(rms)) : ("Length: " + std::to_string(length));
+                cv::putText(resultImage, "No Laser Line: " + reason, cv::Point(20, 30), cv::FONT_HERSHEY_SIMPLEX, 0.7, cv::Scalar(0, 0, 255), 2);
+                std::string fileName = generateFileName(outputDir + "/result", sn);
+                if (cv::imwrite(fileName, resultImage))
+                {
+                    logger->info("失败结果图像已保存: {}", fileName);
+                    result.image_path = fileName;
+                }
+            }
+            return result;
+        }
+
+        float lineAngle = std::atan2(line[1], line[0]);
+        result.status = DetectionResultCode::SUCCESS;
+        result.line_angle = lineAngle;
+        logger->info("激光线检测成功，角度: {:.2f}°，点数: {}, RMS: {:.2f}, 长度: {:.2f}", lineAngle * 180.0 / CV_PI, laserPoints.size(), rms, length);
+        // 如果输出目录不为空，保存结果图像
+        if (!outputDir.empty())
+        {
+            cv::Mat resultImage = image.clone();
+            // 画ROI和直线段（只覆盖所有高亮点）
+            // 计算所有点在直线方向上的投影
+            std::vector<double> projections;
+            for (const auto& pt : laserPoints) {
+                double proj = (pt.x - x0) * vx + (pt.y - y0) * vy;
+                projections.push_back(proj);
+            }
+            auto minmax = std::minmax_element(projections.begin(), projections.end());
+            double minProj = *minmax.first;
+            double maxProj = *minmax.second;
+            // 计算直线段的两个端点（ROI内坐标）
+            cv::Point pt1_roi(x0 + minProj * vx, y0 + minProj * vy);
+            cv::Point pt2_roi(x0 + maxProj * vx, y0 + maxProj * vy);
+            // 转为全图坐标
+            cv::Point pt1(pt1_roi.x + roi.x, pt1_roi.y + roi.y);
+            cv::Point pt2(pt2_roi.x + roi.x, pt2_roi.y + roi.y);
+            cv::rectangle(resultImage, cv::Rect(roi.x, roi.y, roi.width, roi.height), cv::Scalar(0, 255, 0), 2);
+            cv::line(resultImage, pt1, pt2, cv::Scalar(0, 0, 255), 2, cv::LINE_AA);
+            std::string fileName = generateFileName(outputDir + "/result", sn);
+            if (cv::imwrite(fileName, resultImage))
+            {
+                logger->info("检测结果图像已保存: {}", fileName);
+                result.image_path = fileName;
+            }
+            else
+            
+            {
+                logger->error("保存图像失败: {}", fileName);
+            }
+        }
+        return result;
     }
 
     // 激光线检测主函数
     LidarLineResult detect(const cv::Mat &image, const ROI &roi, const std::string &sn, const std::string &outputDir)
     {
-        LidarLineResult result{false, 0, "", ErrorCode::SUCCESS};
-        float lineAngle;
-        cv::Vec4f line; // 新增
+        logger->info("开始主检测流程");
+        LidarLineResult result{false, 0, "", DetectionResultCode::SUCCESS};
+        LidarDetectionResult detectionResult = detectLidarLine(image, roi, sn, outputDir);
 
-        // 进行激光线检测
-        if (!detectLidarLine(image, roi, lineAngle, line))
+        if (detectionResult.status != DetectionResultCode::SUCCESS)
         {
-            result.error_code = ErrorCode::LINE_DETECTION_FAILED;
+            logger->warn("主检测流程：激光线检测失败，状态: {}", static_cast<int>(detectionResult.status));
+            switch (detectionResult.status) {
+                case DetectionResultCode::NOT_FOUND:
+                    result.error_code = DetectionResultCode::NOT_FOUND;
+                    break;
+                case DetectionResultCode::OUT_OF_ROI:
+                    result.error_code = DetectionResultCode::OUT_OF_ROI;
+                    break;
+                default:
+                    result.error_code = DetectionResultCode::UNKNOWN_ERROR;
+                    break;
+            }
             return result;
         }
-        result.line_angle = lineAngle;
+        result.line_angle = detectionResult.line_angle;
+        logger->info("主检测流程：激光线检测成功，角度: {:.2f}°", result.line_angle * 180.0 / CV_PI);
 
         // 如果输出目录不为空，保存结果图像
         if (!outputDir.empty())
@@ -195,33 +321,35 @@ namespace LidarLineDetector
             cv::Mat resultImage = image.clone();
             if (resultImage.empty())
             {
-                std::cerr << "克隆图像失败" << std::endl;
-                result.error_code = ErrorCode::IMAGE_SAVE_FAILED;
+                logger->error("克隆图像失败");
+                result.error_code = DetectionResultCode::IMAGE_SAVE_FAILED;
                 return result;
             }
 
             // line: [vx, vy, x, y]，x/y是ROI内坐标
-            float vx = line[0], vy = line[1];
-            float x = line[2], y = line[3];
+            float vx = detectionResult.line_angle; // 使用检测到的角度作为vx
+            float x = 0; // 假设直线在ROI的左端点
+            float y = 0; // 假设直线在ROI的左端点
 
             // 计算直线在ROI内的两个端点（以ROI内坐标为基准）
-            float leftY = (-x * vy / vx) + y;                   // x=0
-            float rightY = ((roi.width - 1 - x) * vy / vx) + y; // x=roi.width-1
+            float leftY = (-x * vx / 1) + y;                   // x=0
+            float rightY = ((roi.width - 1 - x) * vx / 1) + y; // x=roi.width-1
 
             cv::Point pt1(roi.x, roi.y + cvRound(leftY));
             cv::Point pt2(roi.x + roi.width - 1, roi.y + cvRound(rightY));
             cv::rectangle(resultImage, cv::Rect(roi.x, roi.y, roi.width, roi.height), cv::Scalar(0, 255, 0), 2);
-            cv::line(resultImage, pt1, pt2, cv::Scalar(0, 0, 255), 1, cv::LINE_AA);
+            cv::line(resultImage, pt1, pt2, cv::Scalar(0, 0, 255), 2, cv::LINE_AA);
 
             // 生成文件名并保存图像
             std::string fileName = generateFileName(outputDir + "/result", sn);
             if (!cv::imwrite(fileName, resultImage))
             {
-                std::cerr << "保存图像失败: " << fileName << std::endl;
-                result.error_code = ErrorCode::IMAGE_SAVE_FAILED;
+                logger->error("保存图像失败: {}", fileName);
+                result.error_code = DetectionResultCode::IMAGE_SAVE_FAILED;
             }
             else
             {
+                logger->info("检测结果图像已保存: {}", fileName);
                 result.image_path = fileName;
             }
         }
@@ -230,134 +358,12 @@ namespace LidarLineDetector
         return result;
     }
 
-    // 标靶配置文件读取
-    ErrorCode loadTargetConfig(const string &configPath, TargetConfig &config)
-    {
-        ifstream file(configPath);
-        if (!file.is_open())
-        {
-            cerr << "无法打开配置文件: " << configPath << endl;
-            return ErrorCode::CONFIG_LOAD_FAILED;
-        }
 
-        string line;
-        bool centerRead = false, toleranceRead = false;
-        while (getline(file, line))
-        {
-            if (line.find("center_x:") == 0)
-            {
-                if (sscanf(line.c_str(), "center_x: %f", &config.expected_center.x) == 1)
-                {
-                    centerRead = true;
-                }
-                else
-                {
-                    cerr << "解析 center_x 失败: " << line << endl;
-                }
-            }
-            else if (line.find("center_y:") == 0)
-            {
-                if (sscanf(line.c_str(), "center_y: %f", &config.expected_center.y) == 1)
-                {
-                    centerRead = true;
-                }
-                else
-                {
-                    cerr << "解析 center_y 失败: " << line << endl;
-                }
-            }
-            else if (line.find("tolerance:") == 0)
-            {
-                if (sscanf(line.c_str(), "tolerance: %f", &config.tolerance) == 1)
-                {
-                    toleranceRead = true;
-                }
-                else
-                {
-                    cerr << "解析 tolerance 失败: " << line << endl;
-                }
-            }
-        }
-        file.close();
-
-        if (!centerRead || !toleranceRead)
-        {
-            cerr << "配置文件格式错误，未读取到完整信息。" << endl;
-        }
-        return (centerRead && toleranceRead) ? ErrorCode::SUCCESS : ErrorCode::CONFIG_LOAD_FAILED;
-    }
-
-    // 标靶中心点检测
-    ErrorCode detectTargetCenter(const Mat &image, Point2f &outCenter, Mat &displayImage)
-    {
-        displayImage = image.clone();
-        Mat gray, binary;
-        cvtColor(image, gray, COLOR_BGR2GRAY);
-        threshold(gray, binary, 30, 255, THRESH_BINARY_INV);
-
-        vector<vector<Point>> contours;
-        findContours(binary, contours, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
-
-        vector<Rect> target_rects;
-        for (const auto &cnt : contours)
-        {
-            Rect bbox = boundingRect(cnt);
-            float area = bbox.area(), aspectRatio = (float)bbox.width / bbox.height;
-            if (area > 1000 && area < 10000 && aspectRatio > 0.8 && aspectRatio < 1.2)
-            {
-                target_rects.push_back(bbox);
-                rectangle(displayImage, bbox, Scalar(0, 255, 0), 2);
-            }
-        }
-
-        if (target_rects.size() != 4)
-            return ErrorCode::LINE_DETECTION_FAILED;
-
-        Rect outerRect = target_rects[0];
-        for (size_t i = 1; i < target_rects.size(); ++i)
-            outerRect |= target_rects[i];
-
-        outCenter = Point2f(outerRect.x + outerRect.width / 2, outerRect.y + outerRect.height / 2);
-        circle(displayImage, outCenter, 5, Scalar(0, 0, 255), -1);
-        return ErrorCode::SUCCESS;
-    }
-
-    // 相机自检函数
-    TargetMovementResult_C checkCameraMovement(const Mat &image, const TargetConfig &config, Mat &displayImage)
-    {
-        // 修复：显式转换枚举类型
-        TargetMovementResult_C result{0, 0, 0, 0, static_cast<int>(ErrorCode::SUCCESS), ""};
-        Point2f currentCenter;
-        ErrorCode err = detectTargetCenter(image, currentCenter, displayImage);
-        if (err != ErrorCode::SUCCESS)
-        {
-            result.error_code = static_cast<int>(err);
-            snprintf(result.message, sizeof(result.message), "标靶检测失败: %d", result.error_code);
-            return result;
-        }
-
-        float dx = currentCenter.x - config.expected_center.x;
-        float dy = currentCenter.y - config.expected_center.y;
-        result.dx = dx;
-        result.dy = dy;
-        result.distance = sqrt(dx * dx + dy * dy);
-        result.is_stable = (result.distance <= config.tolerance);
-
-        snprintf(result.message, sizeof(result.message),
-                 result.is_stable ? "相机稳定，偏差: %.1fpx" : "相机移动！偏差: %.1fpx (>%.1fpx)",
-                 result.distance, result.distance, config.tolerance);
-
-        circle(displayImage, config.expected_center, (int)config.tolerance, Scalar(255, 0, 0), 2);
-        line(displayImage, config.expected_center, currentCenter, Scalar(0, 255, 255), 2);
-        putText(displayImage, result.message, Point(20, 30), FONT_HERSHEY_SIMPLEX, 0.7, Scalar(0, 255, 0), 2);
-
-        return result;
-    }
 
 } // namespace LidarLineDetector
 
 // 封装类实现
-ErrorCode CLidarLineDetector::initialize(const char *configPath)
+DetectionResultCode CLidarLineDetector::initialize(const char *configPath)
 {
     return LidarLineDetector::readROIFromConfig(configPath, m_roi);
 }
@@ -379,20 +385,7 @@ TLidarLineResult_C CLidarLineDetector::detect(const TCMat_C image)
     return result_c;
 }
 
-ErrorCode CLidarLineDetector::loadTargetConfig(const char *configPath, LidarLineDetector::TargetConfig &config)
-{
-    return LidarLineDetector::loadTargetConfig(configPath, config);
-}
 
-TargetMovementResult_C CLidarLineDetector::checkCameraStability(const TCMat_C image, const TTargetConfig_C config)
-{
-    Mat image_cpp(image.rows, image.cols, image.type, image.data);
-    LidarLineDetector::TargetConfig internalConfig{
-        Point2f(config.center_x, config.center_y),
-        config.tolerance};
-    Mat displayImage;
-    return LidarLineDetector::checkCameraMovement(image_cpp, internalConfig, displayImage);
-}
 // 版本信息实现
 VersionInfo CLidarLineDetector::getVersionInfo()
 {
@@ -432,9 +425,9 @@ extern "C"
         delete instance;
     }
 
-    Smpclass_API int CLidarLineDetector_initialize(CLidarLineDetector *instance, const char *configPath)
+    Smpclass_API DetectionResultCode CLidarLineDetector_initialize(CLidarLineDetector *instance, const char *configPath)
     {
-        return static_cast<int>(instance->initialize(configPath));
+        return instance->initialize(configPath);
     }
 
     Smpclass_API void CLidarLineDetector_setROI(CLidarLineDetector *instance, int x, int y, int width, int height)
@@ -457,23 +450,7 @@ extern "C"
         return instance->detect(image);
     }
 
-    Smpclass_API int CLidarLineDetector_loadTargetConfig(CLidarLineDetector *instance, const char *configPath, TTargetConfig_C *config)
-    {
-        LidarLineDetector::TargetConfig internalConfig;
-        auto err = instance->loadTargetConfig(configPath, internalConfig);
-        if (err == ErrorCode::SUCCESS)
-        {
-            config->center_x = internalConfig.expected_center.x;
-            config->center_y = internalConfig.expected_center.y;
-            config->tolerance = internalConfig.tolerance;
-        }
-        return static_cast<int>(err);
-    }
 
-    Smpclass_API TargetMovementResult_C CLidarLineDetector_checkCameraStability(CLidarLineDetector *instance, const TCMat_C image, const TTargetConfig_C config)
-    {
-        return instance->checkCameraStability(image, config);
-    }
 
     // 版本信息C接口实现
     Smpclass_API VersionInfo LidarLineDetector_GetVersionInfo()

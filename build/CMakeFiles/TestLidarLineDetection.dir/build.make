@@ -83,16 +83,49 @@ CMakeFiles/TestLidarLineDetection.dir/src/lidar_test_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TestLidarLineDetection.dir/src/lidar_test_main.cpp.s"
 	D:\openCV\mingw64-8.1.0\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\OpenCV\Code\PV31\src\lidar_test_main.cpp -o CMakeFiles\TestLidarLineDetection.dir\src\lidar_test_main.cpp.s
 
+CMakeFiles/TestLidarLineDetection.dir/src/lidar_line_detection.cpp.obj: CMakeFiles/TestLidarLineDetection.dir/flags.make
+CMakeFiles/TestLidarLineDetection.dir/src/lidar_line_detection.cpp.obj: CMakeFiles/TestLidarLineDetection.dir/includes_CXX.rsp
+CMakeFiles/TestLidarLineDetection.dir/src/lidar_line_detection.cpp.obj: D:/OpenCV/Code/PV31/src/lidar_line_detection.cpp
+CMakeFiles/TestLidarLineDetection.dir/src/lidar_line_detection.cpp.obj: CMakeFiles/TestLidarLineDetection.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\OpenCV\Code\PV31\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TestLidarLineDetection.dir/src/lidar_line_detection.cpp.obj"
+	D:\openCV\mingw64-8.1.0\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TestLidarLineDetection.dir/src/lidar_line_detection.cpp.obj -MF CMakeFiles\TestLidarLineDetection.dir\src\lidar_line_detection.cpp.obj.d -o CMakeFiles\TestLidarLineDetection.dir\src\lidar_line_detection.cpp.obj -c D:\OpenCV\Code\PV31\src\lidar_line_detection.cpp
+
+CMakeFiles/TestLidarLineDetection.dir/src/lidar_line_detection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TestLidarLineDetection.dir/src/lidar_line_detection.cpp.i"
+	D:\openCV\mingw64-8.1.0\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\OpenCV\Code\PV31\src\lidar_line_detection.cpp > CMakeFiles\TestLidarLineDetection.dir\src\lidar_line_detection.cpp.i
+
+CMakeFiles/TestLidarLineDetection.dir/src/lidar_line_detection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TestLidarLineDetection.dir/src/lidar_line_detection.cpp.s"
+	D:\openCV\mingw64-8.1.0\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\OpenCV\Code\PV31\src\lidar_line_detection.cpp -o CMakeFiles\TestLidarLineDetection.dir\src\lidar_line_detection.cpp.s
+
+CMakeFiles/TestLidarLineDetection.dir/src/camera_stability_detection.cpp.obj: CMakeFiles/TestLidarLineDetection.dir/flags.make
+CMakeFiles/TestLidarLineDetection.dir/src/camera_stability_detection.cpp.obj: CMakeFiles/TestLidarLineDetection.dir/includes_CXX.rsp
+CMakeFiles/TestLidarLineDetection.dir/src/camera_stability_detection.cpp.obj: D:/OpenCV/Code/PV31/src/camera_stability_detection.cpp
+CMakeFiles/TestLidarLineDetection.dir/src/camera_stability_detection.cpp.obj: CMakeFiles/TestLidarLineDetection.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\OpenCV\Code\PV31\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TestLidarLineDetection.dir/src/camera_stability_detection.cpp.obj"
+	D:\openCV\mingw64-8.1.0\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TestLidarLineDetection.dir/src/camera_stability_detection.cpp.obj -MF CMakeFiles\TestLidarLineDetection.dir\src\camera_stability_detection.cpp.obj.d -o CMakeFiles\TestLidarLineDetection.dir\src\camera_stability_detection.cpp.obj -c D:\OpenCV\Code\PV31\src\camera_stability_detection.cpp
+
+CMakeFiles/TestLidarLineDetection.dir/src/camera_stability_detection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TestLidarLineDetection.dir/src/camera_stability_detection.cpp.i"
+	D:\openCV\mingw64-8.1.0\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\OpenCV\Code\PV31\src\camera_stability_detection.cpp > CMakeFiles\TestLidarLineDetection.dir\src\camera_stability_detection.cpp.i
+
+CMakeFiles/TestLidarLineDetection.dir/src/camera_stability_detection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TestLidarLineDetection.dir/src/camera_stability_detection.cpp.s"
+	D:\openCV\mingw64-8.1.0\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\OpenCV\Code\PV31\src\camera_stability_detection.cpp -o CMakeFiles\TestLidarLineDetection.dir\src\camera_stability_detection.cpp.s
+
 # Object files for target TestLidarLineDetection
 TestLidarLineDetection_OBJECTS = \
-"CMakeFiles/TestLidarLineDetection.dir/src/lidar_test_main.cpp.obj"
+"CMakeFiles/TestLidarLineDetection.dir/src/lidar_test_main.cpp.obj" \
+"CMakeFiles/TestLidarLineDetection.dir/src/lidar_line_detection.cpp.obj" \
+"CMakeFiles/TestLidarLineDetection.dir/src/camera_stability_detection.cpp.obj"
 
 # External object files for target TestLidarLineDetection
 TestLidarLineDetection_EXTERNAL_OBJECTS =
 
 TestLidarLineDetection.exe: CMakeFiles/TestLidarLineDetection.dir/src/lidar_test_main.cpp.obj
+TestLidarLineDetection.exe: CMakeFiles/TestLidarLineDetection.dir/src/lidar_line_detection.cpp.obj
+TestLidarLineDetection.exe: CMakeFiles/TestLidarLineDetection.dir/src/camera_stability_detection.cpp.obj
 TestLidarLineDetection.exe: CMakeFiles/TestLidarLineDetection.dir/build.make
-TestLidarLineDetection.exe: libLidarLineDetection.dll.a
 TestLidarLineDetection.exe: D:/OpenCV/OpenCV-MinGW-Build-4.5.2/x64/mingw/lib/libopencv_gapi452.dll.a
 TestLidarLineDetection.exe: D:/OpenCV/OpenCV-MinGW-Build-4.5.2/x64/mingw/lib/libopencv_highgui452.dll.a
 TestLidarLineDetection.exe: D:/OpenCV/OpenCV-MinGW-Build-4.5.2/x64/mingw/lib/libopencv_ml452.dll.a
@@ -101,17 +134,17 @@ TestLidarLineDetection.exe: D:/OpenCV/OpenCV-MinGW-Build-4.5.2/x64/mingw/lib/lib
 TestLidarLineDetection.exe: D:/OpenCV/OpenCV-MinGW-Build-4.5.2/x64/mingw/lib/libopencv_stitching452.dll.a
 TestLidarLineDetection.exe: D:/OpenCV/OpenCV-MinGW-Build-4.5.2/x64/mingw/lib/libopencv_video452.dll.a
 TestLidarLineDetection.exe: D:/OpenCV/OpenCV-MinGW-Build-4.5.2/x64/mingw/lib/libopencv_videoio452.dll.a
-TestLidarLineDetection.exe: D:/OpenCV/OpenCV-MinGW-Build-4.5.2/x64/mingw/lib/libopencv_calib3d452.dll.a
 TestLidarLineDetection.exe: D:/OpenCV/OpenCV-MinGW-Build-4.5.2/x64/mingw/lib/libopencv_dnn452.dll.a
+TestLidarLineDetection.exe: D:/OpenCV/OpenCV-MinGW-Build-4.5.2/x64/mingw/lib/libopencv_imgcodecs452.dll.a
+TestLidarLineDetection.exe: D:/OpenCV/OpenCV-MinGW-Build-4.5.2/x64/mingw/lib/libopencv_calib3d452.dll.a
 TestLidarLineDetection.exe: D:/OpenCV/OpenCV-MinGW-Build-4.5.2/x64/mingw/lib/libopencv_features2d452.dll.a
 TestLidarLineDetection.exe: D:/OpenCV/OpenCV-MinGW-Build-4.5.2/x64/mingw/lib/libopencv_flann452.dll.a
-TestLidarLineDetection.exe: D:/OpenCV/OpenCV-MinGW-Build-4.5.2/x64/mingw/lib/libopencv_imgcodecs452.dll.a
 TestLidarLineDetection.exe: D:/OpenCV/OpenCV-MinGW-Build-4.5.2/x64/mingw/lib/libopencv_imgproc452.dll.a
 TestLidarLineDetection.exe: D:/OpenCV/OpenCV-MinGW-Build-4.5.2/x64/mingw/lib/libopencv_core452.dll.a
 TestLidarLineDetection.exe: CMakeFiles/TestLidarLineDetection.dir/linkLibs.rsp
 TestLidarLineDetection.exe: CMakeFiles/TestLidarLineDetection.dir/objects1.rsp
 TestLidarLineDetection.exe: CMakeFiles/TestLidarLineDetection.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\OpenCV\Code\PV31\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TestLidarLineDetection.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\OpenCV\Code\PV31\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TestLidarLineDetection.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TestLidarLineDetection.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

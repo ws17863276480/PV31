@@ -1,6 +1,10 @@
-build/
+build/*
+!build/libLidarLineDectection.dll
 CMakeCache.txt
 CMakeFiles/
 Makefile
 cmake_install.cmake
 *.exe
+build/log/
+image/
+output/
