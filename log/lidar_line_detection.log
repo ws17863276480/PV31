@@ -1,0 +1,306 @@
+[2025-07-23 14:01:51.447] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 14:01:51.448] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 14:01:51.448] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 14:01:51.448] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 14:01:51.448] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 14:01:51.480] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.5206866192827726, 长度: 736.9997863769531, ROI宽度: 1282.0659109421792
+[2025-07-23 14:01:51.509] [lidar_logger] [info] 失败结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_14_01_51_2025_.jpg
+[2025-07-23 14:01:51.512] [lidar_logger] [warning] 主检测流程：四边形ROI激光线检测失败，状态: 2
+[2025-07-23 14:01:51.513] [lidar_logger] [info] 开始带物理角度计算的激光线检测
+[2025-07-23 14:01:51.513] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:01:51.513] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 14:01:51.513] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 14:01:51.513] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 14:01:51.513] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 14:01:51.513] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 14:01:51.513] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 14:01:51.513] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 14:01:51.513] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:01:51.513] [lidar_logger] [error] 四边形ROI配置读取不完整
+[2025-07-23 14:01:51.513] [lidar_logger] [info] 四边形ROI配置读取失败，尝试矩形ROI配置
+[2025-07-23 14:01:51.513] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:01:51.513] [lidar_logger] [error] 主检测流程：读取ROI配置失败，状态: 4
+[2025-07-23 14:01:51.513] [lidar_logger] [warning] 标准检测失败，无法进行物理角度计算
+[2025-07-23 14:01:51.514] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:01:51.514] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 14:01:51.514] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 14:01:51.514] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 14:01:51.514] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 14:01:51.514] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 14:01:51.514] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 14:02:03.893] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 14:02:03.893] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 14:02:03.894] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 14:02:03.894] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 14:02:03.894] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 14:02:03.920] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.5206866192827726, 长度: 736.9997863769531, ROI宽度: 1282.0659109421792
+[2025-07-23 14:02:03.947] [lidar_logger] [info] 失败结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_14_02_03_2025_.jpg
+[2025-07-23 14:02:03.948] [lidar_logger] [warning] 主检测流程：四边形ROI激光线检测失败，状态: 2
+[2025-07-23 14:03:01.625] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 14:03:01.625] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 14:03:01.626] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 14:03:01.626] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 14:03:01.626] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 14:03:01.659] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.5206866192827726, 长度: 736.9997863769531, ROI宽度: 1282.0659109421792
+[2025-07-23 14:03:01.685] [lidar_logger] [info] 失败结果图像已保存: D:\OpenCV\Code\PV31\output/result_123456_Wed_Jul_23_14_03_01_2025_.jpg
+[2025-07-23 14:03:01.687] [lidar_logger] [warning] 主检测流程：四边形ROI激光线检测失败，状态: 2
+[2025-07-23 14:03:01.687] [lidar_logger] [info] 开始带物理角度计算的激光线检测
+[2025-07-23 14:03:01.687] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:03:01.688] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 14:03:01.688] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 14:03:01.688] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 14:03:01.688] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 14:03:01.688] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 14:03:01.688] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 14:03:01.688] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 14:03:01.688] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:03:01.689] [lidar_logger] [error] 四边形ROI配置读取不完整
+[2025-07-23 14:03:01.689] [lidar_logger] [info] 四边形ROI配置读取失败，尝试矩形ROI配置
+[2025-07-23 14:03:01.689] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:03:01.689] [lidar_logger] [error] 主检测流程：读取ROI配置失败，状态: 4
+[2025-07-23 14:03:01.689] [lidar_logger] [warning] 标准检测失败，无法进行物理角度计算
+[2025-07-23 14:03:01.689] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:03:01.689] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 14:03:01.689] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 14:03:01.689] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 14:03:01.689] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 14:03:01.689] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 14:03:01.689] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 14:07:55.077] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:07:55.077] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 14:07:55.077] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 14:07:55.077] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 14:07:55.077] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 14:07:55.077] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 14:07:55.077] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 14:07:55.083] [lidar_logger] [info] 角度计算结果: 像素角度=0.0000弧度(0.00°), 物理角度=0.00°, 有效=false
+[2025-07-23 14:07:55.085] [lidar_logger] [info] 角度计算结果: 像素角度=0.0175弧度(1.00°), 物理角度=1.00°, 有效=false
+[2025-07-23 14:07:55.087] [lidar_logger] [info] 角度计算结果: 像素角度=0.0349弧度(2.00°), 物理角度=2.00°, 有效=true
+[2025-07-23 14:07:55.089] [lidar_logger] [info] 角度计算结果: 像素角度=0.0524弧度(3.00°), 物理角度=3.00°, 有效=false
+[2025-07-23 14:07:55.091] [lidar_logger] [info] 角度计算结果: 像素角度=0.0135弧度(0.77°), 物理角度=0.77°, 有效=false
+[2025-07-23 14:07:55.093] [lidar_logger] [info] 角度计算结果: 像素角度=-0.0175弧度(-1.00°), 物理角度=-1.00°, 有效=false
+[2025-07-23 14:07:55.096] [lidar_logger] [info] 角度计算结果: 像素角度=-0.0349弧度(-2.00°), 物理角度=-2.00°, 有效=false
+[2025-07-23 14:10:21.349] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 14:10:21.349] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 14:10:21.350] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 14:10:21.350] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 14:10:21.350] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 14:10:21.377] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.5206866192827726, 长度: 736.9997863769531, ROI宽度: 1282.0659109421792
+[2025-07-23 14:10:21.401] [lidar_logger] [info] 失败结果图像已保存: D:\OpenCV\Code\PV31\output/result_123456_Wed_Jul_23_14_10_21_2025_.jpg
+[2025-07-23 14:10:21.402] [lidar_logger] [warning] 主检测流程：四边形ROI激光线检测失败，状态: 2
+[2025-07-23 14:10:21.403] [lidar_logger] [info] 开始带物理角度计算的激光线检测
+[2025-07-23 14:10:21.403] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:10:21.404] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 14:10:21.404] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 14:10:21.404] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 14:10:21.404] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 14:10:21.404] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 14:10:21.404] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 14:10:21.404] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 14:10:21.404] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:10:21.404] [lidar_logger] [error] 四边形ROI配置读取不完整
+[2025-07-23 14:10:21.404] [lidar_logger] [info] 四边形ROI配置读取失败，尝试矩形ROI配置
+[2025-07-23 14:10:21.404] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:10:21.404] [lidar_logger] [error] 主检测流程：读取ROI配置失败，状态: 4
+[2025-07-23 14:10:21.404] [lidar_logger] [warning] 标准检测失败，无法进行物理角度计算
+[2025-07-23 14:10:21.405] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:10:21.405] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 14:10:21.405] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 14:10:21.405] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 14:10:21.405] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 14:10:21.405] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 14:10:21.405] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 14:11:38.442] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 14:11:38.442] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 14:11:38.443] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 14:11:38.443] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 14:11:38.443] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 14:11:38.471] [lidar_logger] [info] 四边形ROI激光线检测成功，角度: 0.77°，点数: 6171, RMS: 1.82, 长度: 1280.14
+[2025-07-23 14:11:38.496] [lidar_logger] [info] 检测结果图像已保存: D:\OpenCV\Code\PV31\output/result_123456_Wed_Jul_23_14_11_38_2025_.jpg
+[2025-07-23 14:11:38.503] [lidar_logger] [info] 开始带物理角度计算的激光线检测
+[2025-07-23 14:11:38.503] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:11:38.504] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 14:11:38.504] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 14:11:38.504] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 14:11:38.504] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 14:11:38.504] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 14:11:38.504] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 14:11:38.504] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 14:11:38.504] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:11:38.504] [lidar_logger] [error] 四边形ROI配置读取不完整
+[2025-07-23 14:11:38.504] [lidar_logger] [info] 四边形ROI配置读取失败，尝试矩形ROI配置
+[2025-07-23 14:11:38.504] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:11:38.504] [lidar_logger] [error] 主检测流程：读取ROI配置失败，状态: 4
+[2025-07-23 14:11:38.504] [lidar_logger] [warning] 标准检测失败，无法进行物理角度计算
+[2025-07-23 14:11:38.504] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:11:38.505] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 14:11:38.505] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 14:11:38.505] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 14:11:38.505] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 14:11:38.505] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 14:11:38.505] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 14:11:38.509] [lidar_logger] [info] 角度计算结果: 像素角度=0.0135弧度(0.77°), 物理角度=0.77°, 有效=false
+[2025-07-23 14:43:44.222] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 14:43:44.223] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 14:43:44.223] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 14:43:44.223] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 14:43:44.223] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 14:43:44.248] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.5206866192827726, 长度: 736.9997863769531, ROI宽度: 1282.0659109421792
+[2025-07-23 14:43:44.282] [lidar_logger] [info] 失败结果图像已保存: D:\OpenCV\Code\PV31\output/result_123456_Wed_Jul_23_14_43_44_2025_.jpg
+[2025-07-23 14:43:44.284] [lidar_logger] [warning] 主检测流程：四边形ROI激光线检测失败，状态: 2
+[2025-07-23 14:43:44.284] [lidar_logger] [info] 开始带物理角度计算的激光线检测
+[2025-07-23 14:43:44.284] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:43:44.284] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 14:43:44.285] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 14:43:44.285] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 14:43:44.285] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 14:43:44.285] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 14:43:44.285] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 14:43:44.285] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 14:43:44.285] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:43:44.285] [lidar_logger] [error] 四边形ROI配置读取不完整
+[2025-07-23 14:43:44.285] [lidar_logger] [info] 四边形ROI配置读取失败，尝试矩形ROI配置
+[2025-07-23 14:43:44.285] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:43:44.285] [lidar_logger] [error] 主检测流程：读取ROI配置失败，状态: 4
+[2025-07-23 14:43:44.285] [lidar_logger] [warning] 标准检测失败，无法进行物理角度计算
+[2025-07-23 14:43:44.286] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 14:43:44.286] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 14:43:44.286] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 14:43:44.286] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 14:43:44.286] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 14:43:44.286] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 14:43:44.286] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 15:08:00.079] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 15:08:00.079] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 15:08:00.079] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 15:08:00.079] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 15:08:00.079] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 15:08:00.079] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 15:08:00.079] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 15:08:00.081] [lidar_logger] [info] 角度计算结果: 像素角度=0.0000弧度(0.00°), 物理角度=0.00°, 有效=false
+[2025-07-23 15:08:00.083] [lidar_logger] [info] 角度计算结果: 像素角度=0.0175弧度(1.00°), 物理角度=1.00°, 有效=false
+[2025-07-23 15:08:00.085] [lidar_logger] [info] 角度计算结果: 像素角度=0.0349弧度(2.00°), 物理角度=2.00°, 有效=true
+[2025-07-23 15:08:00.087] [lidar_logger] [info] 角度计算结果: 像素角度=0.0524弧度(3.00°), 物理角度=3.00°, 有效=false
+[2025-07-23 15:08:00.089] [lidar_logger] [info] 角度计算结果: 像素角度=0.0135弧度(0.77°), 物理角度=0.77°, 有效=false
+[2025-07-23 15:08:00.091] [lidar_logger] [info] 角度计算结果: 像素角度=-0.0175弧度(-1.00°), 物理角度=-1.00°, 有效=false
+[2025-07-23 15:08:00.092] [lidar_logger] [info] 角度计算结果: 像素角度=-0.0349弧度(-2.00°), 物理角度=-2.00°, 有效=false
+[2025-07-23 15:09:30.289] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 15:09:30.289] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 15:09:30.289] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 15:09:30.289] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 15:09:30.289] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 15:09:30.315] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.5206866192827726, 长度: 736.9997863769531, ROI宽度: 1282.0659109421792
+[2025-07-23 15:09:30.339] [lidar_logger] [info] 失败结果图像已保存: D:\OpenCV\Code\PV31\output/result_123456_Wed_Jul_23_15_09_30_2025_.jpg
+[2025-07-23 15:09:30.341] [lidar_logger] [warning] 主检测流程：四边形ROI激光线检测失败，状态: 2
+[2025-07-23 15:09:30.342] [lidar_logger] [info] 开始带物理角度计算的激光线检测
+[2025-07-23 15:09:30.342] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 15:09:30.342] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 15:09:30.342] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 15:09:30.342] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 15:09:30.342] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 15:09:30.342] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 15:09:30.342] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 15:09:30.342] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 15:09:30.342] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 15:09:30.342] [lidar_logger] [error] 四边形ROI配置读取不完整
+[2025-07-23 15:09:30.342] [lidar_logger] [info] 四边形ROI配置读取失败，尝试矩形ROI配置
+[2025-07-23 15:09:30.342] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 15:09:30.343] [lidar_logger] [error] 主检测流程：读取ROI配置失败，状态: 4
+[2025-07-23 15:09:30.343] [lidar_logger] [warning] 标准检测失败，无法进行物理角度计算
+[2025-07-23 15:09:30.343] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 15:09:30.344] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 15:09:30.344] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 15:09:30.344] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 15:09:30.344] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 15:09:30.344] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 15:09:30.344] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 15:22:45.939] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 15:22:45.939] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 15:22:45.939] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 15:22:45.939] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 15:22:45.939] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 15:22:45.967] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.5206866192827726, 长度: 736.9997863769531, ROI宽度: 1282.0659109421792
+[2025-07-23 15:22:45.995] [lidar_logger] [info] 失败结果图像已保存: D:\OpenCV\Code\PV31\output/result_123456_Wed_Jul_23_15_22_45_2025_.jpg
+[2025-07-23 15:22:45.998] [lidar_logger] [warning] 主检测流程：四边形ROI激光线检测失败，状态: 2
+[2025-07-23 15:22:45.998] [lidar_logger] [info] 开始带物理角度计算的激光线检测
+[2025-07-23 15:22:45.998] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 15:22:45.999] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 15:22:45.999] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 15:22:45.999] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 15:22:45.999] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 15:22:45.999] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 15:22:45.999] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 15:22:45.999] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 15:22:45.999] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 15:22:45.999] [lidar_logger] [error] 四边形ROI配置读取不完整
+[2025-07-23 15:22:45.999] [lidar_logger] [info] 四边形ROI配置读取失败，尝试矩形ROI配置
+[2025-07-23 15:22:45.999] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 15:22:45.999] [lidar_logger] [error] 主检测流程：读取ROI配置失败，状态: 4
+[2025-07-23 15:22:45.999] [lidar_logger] [warning] 标准检测失败，无法进行物理角度计算
+[2025-07-23 15:22:46.000] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 15:22:46.000] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 15:22:46.000] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 15:22:46.000] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 15:22:46.000] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 15:22:46.000] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 15:22:46.000] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 15:23:59.847] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 15:23:59.847] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 15:23:59.847] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 15:23:59.847] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 15:23:59.847] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 15:23:59.872] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.5206866192827726, 长度: 736.9997863769531, ROI宽度: 1282.0659109421792
+[2025-07-23 15:23:59.897] [lidar_logger] [info] 失败结果图像已保存: D:\OpenCV\Code\PV31\output/result_123456_Wed_Jul_23_15_23_59_2025_.jpg
+[2025-07-23 15:23:59.898] [lidar_logger] [warning] 主检测流程：四边形ROI激光线检测失败，状态: 2
+[2025-07-23 15:23:59.899] [lidar_logger] [info] 开始带物理角度计算的激光线检测
+[2025-07-23 15:23:59.899] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 15:23:59.899] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 15:23:59.899] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 15:23:59.899] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 15:23:59.899] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 15:23:59.899] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 15:23:59.899] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 15:23:59.899] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 15:23:59.899] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 15:23:59.899] [lidar_logger] [error] 四边形ROI配置读取不完整
+[2025-07-23 15:23:59.899] [lidar_logger] [info] 四边形ROI配置读取失败，尝试矩形ROI配置
+[2025-07-23 15:23:59.899] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 15:23:59.900] [lidar_logger] [error] 主检测流程：读取ROI配置失败，状态: 4
+[2025-07-23 15:23:59.900] [lidar_logger] [warning] 标准检测失败，无法进行物理角度计算
+[2025-07-23 15:23:59.900] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 15:23:59.900] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 15:23:59.900] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 15:23:59.900] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 15:23:59.900] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 15:23:59.900] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 15:23:59.900] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 15:24:58.850] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 15:24:58.850] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 15:24:58.850] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 15:24:58.850] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 15:24:58.850] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 15:24:58.878] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.5206866192827726, 长度: 736.9997863769531, ROI宽度: 1282.0659109421792
+[2025-07-23 15:24:58.903] [lidar_logger] [info] 失败结果图像已保存: D:\OpenCV\Code\PV31\output/result_123456_Wed_Jul_23_15_24_58_2025_.jpg
+[2025-07-23 15:24:58.906] [lidar_logger] [warning] 主检测流程：四边形ROI激光线检测失败，状态: 2
+[2025-07-23 15:24:58.907] [lidar_logger] [info] 开始带物理角度计算的激光线检测
+[2025-07-23 15:24:58.907] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 15:24:58.907] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 15:24:58.907] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 15:24:58.907] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 15:24:58.907] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 15:24:58.907] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 15:24:58.907] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm
+[2025-07-23 15:24:58.907] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 15:24:58.907] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 15:24:58.907] [lidar_logger] [error] 四边形ROI配置读取不完整
+[2025-07-23 15:24:58.907] [lidar_logger] [info] 四边形ROI配置读取失败，尝试矩形ROI配置
+[2025-07-23 15:24:58.907] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 15:24:58.907] [lidar_logger] [error] 主检测流程：读取ROI配置失败，状态: 4
+[2025-07-23 15:24:58.907] [lidar_logger] [warning] 标准检测失败，无法进行物理角度计算
+[2025-07-23 15:24:58.908] [lidar_logger] [info] 读取角度计算参数配置: D:\OpenCV\Code\PV31\config\ANGLE_CALCULATION_CONFIG.ini
+[2025-07-23 15:24:58.908] [lidar_logger] [info] 角度计算参数读取成功:
+[2025-07-23 15:24:58.908] [lidar_logger] [info]   最大上仰角: 2.75°
+[2025-07-23 15:24:58.908] [lidar_logger] [info]   最小上仰角: 1.25°
+[2025-07-23 15:24:58.908] [lidar_logger] [info]   激光高度: 60mm
+[2025-07-23 15:24:58.908] [lidar_logger] [info]   目标距离: 1055.98mm
+[2025-07-23 15:24:58.908] [lidar_logger] [info]   X1高度: 110.7mm, X2高度: 83.04mm, X3高度: 75.33mm, X4高度: 93.74mm

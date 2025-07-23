@@ -1,0 +1,234 @@
+[2025-07-22 15:11:49.788] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-22 15:11:49.789] [lidar_logger] [info] ROI配置读取成功: x=322, y=549, w=1276, h=87
+[2025-07-22 15:12:28.954] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-22 15:12:28.955] [lidar_logger] [info] ROI配置读取成功: x=322, y=549, w=1276, h=87
+[2025-07-22 15:12:28.968] [lidar_logger] [info] 开始主检测流程
+[2025-07-22 15:12:28.968] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-22 15:12:28.968] [lidar_logger] [info] ROI配置读取成功: x=322, y=549, w=1276, h=87
+[2025-07-22 15:12:28.968] [lidar_logger] [info] 开始激光线检测，ROI: x=322, y=549, w=1276, h=87
+[2025-07-22 15:12:28.981] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.8219249969073796, 长度: 1275.1806640625
+[2025-07-22 15:12:28.981] [lidar_logger] [info] 激光线检测成功，角度: 0.77°，点数: 6147, RMS: 1.82, 长度: 1275.18
+[2025-07-22 15:12:29.010] [lidar_logger] [info] 检测结果图像已保存: D:\OpenCV\Code\PV31\output/result_123456_Tue_Jul_22_15_12_28_2025_.jpg
+[2025-07-22 15:14:47.921] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-22 15:14:47.921] [lidar_logger] [info] ROI配置读取成功: x=322, y=549, w=1276, h=87
+[2025-07-22 15:14:47.934] [lidar_logger] [info] 开始主检测流程
+[2025-07-22 15:14:47.934] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-22 15:14:47.934] [lidar_logger] [info] ROI配置读取成功: x=322, y=549, w=1276, h=87
+[2025-07-22 15:14:47.934] [lidar_logger] [info] 开始激光线检测，ROI: x=322, y=549, w=1276, h=87
+[2025-07-22 15:14:47.947] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.8219249969073796, 长度: 1275.1806640625
+[2025-07-22 15:14:47.947] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.8219249969073796, 长度: 1275.1806640625
+[2025-07-22 15:14:47.977] [lidar_logger] [info] 失败结果图像已保存: D:\OpenCV\Code\PV31\output/result_123456_Tue_Jul_22_15_14_47_2025_.jpg
+[2025-07-22 15:14:47.977] [lidar_logger] [warning] 主检测流程：激光线检测失败，状态: 2
+[2025-07-22 15:17:37.569] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-22 15:17:37.569] [lidar_logger] [info] ROI配置读取成功: x=322, y=549, w=1276, h=87
+[2025-07-22 15:17:37.582] [lidar_logger] [info] 开始主检测流程
+[2025-07-22 15:17:37.582] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-22 15:17:37.582] [lidar_logger] [info] ROI配置读取成功: x=322, y=549, w=1276, h=87
+[2025-07-22 15:17:37.582] [lidar_logger] [info] 开始激光线检测，ROI: x=322, y=549, w=1276, h=87
+[2025-07-22 15:17:37.595] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.8219249969073796, 长度: 1275.1806640625
+[2025-07-22 15:17:37.595] [lidar_logger] [info] 激光线检测成功，角度: 0.77°，点数: 6147, RMS: 1.82, 长度: 1275.18
+[2025-07-22 15:17:37.627] [lidar_logger] [info] 检测结果图像已保存: D:\OpenCV\Code\PV31\output/result_123456_Tue_Jul_22_15_17_37_2025_.jpg
+[2025-07-22 15:20:11.993] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-22 15:20:11.993] [lidar_logger] [info] ROI配置读取成功: x=322, y=549, w=1276, h=87
+[2025-07-22 15:20:12.006] [lidar_logger] [info] 开始主检测流程
+[2025-07-22 15:20:12.006] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-22 15:20:12.006] [lidar_logger] [info] ROI配置读取成功: x=322, y=549, w=1276, h=87
+[2025-07-22 15:20:12.006] [lidar_logger] [info] 开始激光线检测，ROI: x=322, y=549, w=1276, h=87
+[2025-07-22 15:20:12.018] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.8219249969073796, 长度: 1275.1806640625
+[2025-07-22 15:20:12.018] [lidar_logger] [info] 激光线检测成功，角度: 0.77°，点数: 6147, RMS: 1.82, 长度: 1275.18
+[2025-07-22 15:20:12.049] [lidar_logger] [info] 检测结果图像已保存: D:\OpenCV\Code\PV31\output/result_123456_Tue_Jul_22_15_20_12_2025_.jpg
+[2025-07-22 16:58:12.195] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-22 16:58:12.195] [lidar_logger] [info] ROI配置读取成功: x=322, y=549, w=1276, h=87
+[2025-07-22 16:58:12.195] [lidar_logger] [info] 开始主检测流程
+[2025-07-22 16:58:12.195] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-22 16:58:12.195] [lidar_logger] [info] ROI配置读取成功: x=322, y=549, w=1276, h=87
+[2025-07-22 16:58:12.195] [lidar_logger] [info] 开始激光线检测，ROI: x=322, y=549, w=1276, h=87
+[2025-07-22 16:58:12.214] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.8219249969073796, 长度: 1275.1806640625
+[2025-07-22 16:58:12.214] [lidar_logger] [info] 激光线检测成功，角度: 0.77°，点数: 6147, RMS: 1.82, 长度: 1275.18
+[2025-07-22 16:58:12.246] [lidar_logger] [info] 检测结果图像已保存: D:\OpenCV\Code\PV31\output/result_123456_Tue_Jul_22_16_58_12_2025_.jpg
+[2025-07-22 16:58:12.246] [lidar_logger] [info] 检测结果图像已保存: D:\OpenCV\Code\PV31\output/result_123456_Tue_Jul_22_16_58_12_2025_.jpg
+[2025-07-22 17:14:55.487] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-22 17:14:55.488] [lidar_logger] [info] ROI配置读取成功: x=322, y=549, w=1276, h=87
+[2025-07-22 17:14:55.499] [lidar_logger] [info] 开始主检测流程
+[2025-07-22 17:14:55.499] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-22 17:14:55.499] [lidar_logger] [info] ROI配置读取成功: x=322, y=549, w=1276, h=87
+[2025-07-22 17:14:55.499] [lidar_logger] [info] 开始激光线检测，ROI: x=322, y=549, w=1276, h=87
+[2025-07-22 17:14:55.509] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.8219249969073796, 长度: 1275.1806640625
+[2025-07-22 17:14:55.509] [lidar_logger] [info] 激光线检测成功，角度: 0.77°，点数: 6147, RMS: 1.82, 长度: 1275.18
+[2025-07-22 17:14:55.542] [lidar_logger] [info] 检测结果图像已保存: D:\OpenCV\Code\PV31\output/result_123456_Tue_Jul_22_17_14_55_2025_.jpg
+[2025-07-22 17:14:55.542] [lidar_logger] [info] 检测结果图像已保存: D:\OpenCV\Code\PV31\output/result_123456_Tue_Jul_22_17_14_55_2025_.jpg
+[2025-07-22 17:19:48.955] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-22 17:19:48.955] [lidar_logger] [info] ROI配置读取成功: x=322, y=549, w=1276, h=87
+[2025-07-22 17:19:48.971] [lidar_logger] [info] 开始主检测流程
+[2025-07-22 17:19:48.971] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-22 17:19:48.971] [lidar_logger] [info] ROI配置读取成功: x=322, y=549, w=1276, h=87
+[2025-07-22 17:19:48.971] [lidar_logger] [info] 开始激光线检测，ROI: x=322, y=549, w=1276, h=87
+[2025-07-22 17:19:48.992] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.8219249969073796, 长度: 1275.1806640625
+[2025-07-22 17:19:48.997] [lidar_logger] [info] 激光线检测成功，角度: 0.77°，点数: 6147, RMS: 1.82, 长度: 1275.18
+[2025-07-22 17:19:49.020] [lidar_logger] [info] 检测结果图像已保存: D:\OpenCV\Code\PV31\output/result_123456_Tue_Jul_22_17_19_48_2025_.jpg
+[2025-07-22 17:19:49.020] [lidar_logger] [info] 检测结果图像已保存: D:\OpenCV\Code\PV31\output/result_123456_Tue_Jul_22_17_19_48_2025_.jpg
+[2025-07-22 17:23:17.168] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-22 17:23:17.168] [lidar_logger] [info] ROI配置读取成功: x=322, y=549, w=1276, h=87
+[2025-07-22 17:23:17.189] [lidar_logger] [info] 开始主检测流程
+[2025-07-22 17:23:17.189] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-22 17:23:17.189] [lidar_logger] [info] ROI配置读取成功: x=322, y=549, w=1276, h=87
+[2025-07-22 17:23:17.189] [lidar_logger] [info] 开始激光线检测，ROI: x=322, y=549, w=1276, h=87
+[2025-07-22 17:23:17.194] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.8219249969073796, 长度: 1275.1806640625
+[2025-07-22 17:23:17.194] [lidar_logger] [info] 激光线检测成功，角度: 0.77°，点数: 6147, RMS: 1.82, 长度: 1275.18
+[2025-07-22 17:23:17.223] [lidar_logger] [info] 检测结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Tue_Jul_22_17_23_17_2025_.jpg
+[2025-07-22 17:23:17.223] [lidar_logger] [info] 检测结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Tue_Jul_22_17_23_17_2025_.jpg
+[2025-07-23 10:26:59.700] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 10:26:59.700] [lidar_logger] [info] ROI配置读取成功: x=322, y=548, w=1282, h=84
+[2025-07-23 10:26:59.712] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 10:26:59.712] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 10:26:59.712] [lidar_logger] [info] ROI配置读取成功: x=322, y=548, w=1282, h=84
+[2025-07-23 10:26:59.712] [lidar_logger] [info] 开始激光线检测，ROI: x=322, y=548, w=1282, h=84
+[2025-07-23 10:26:59.754] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 2.025810221366765, 长度: 1280.8331909179688
+[2025-07-23 10:26:59.754] [lidar_logger] [info] 激光线检测成功，角度: 0.76°，点数: 6179, RMS: 2.03, 长度: 1280.83
+[2025-07-23 10:26:59.815] [lidar_logger] [info] 检测结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_10_26_59_2025_.jpg
+[2025-07-23 10:34:22.697] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 10:36:35.708] [lidar_logger] [info] 开始读取ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 10:37:31.583] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 10:37:31.583] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 10:37:31.583] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 10:37:31.583] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 10:37:31.583] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 10:37:31.620] [lidar_logger] [info] 四边形ROI激光线检测成功，角度: 0.77°，点数: 6171, RMS: 1.82, 长度: 1280.14
+[2025-07-23 10:37:31.651] [lidar_logger] [info] 检测结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_10_37_31_2025_.jpg
+[2025-07-23 10:39:20.305] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 10:39:20.305] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 10:39:20.305] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 10:39:20.305] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 10:39:20.305] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 10:39:20.339] [lidar_logger] [info] 四边形ROI激光线检测成功，角度: 0.77°，点数: 6171, RMS: 1.82, 长度: 1280.14
+[2025-07-23 10:39:20.372] [lidar_logger] [info] 检测结果图像已保存: D:/OpenCV/Code/PV31/output/result_QUAD_TEST_Wed_Jul_23_10_39_20_2025_.jpg
+[2025-07-23 10:49:47.844] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 10:49:47.844] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 10:49:47.844] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 10:49:47.844] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 10:49:47.844] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 10:49:47.875] [lidar_logger] [info] 四边形ROI激光线检测成功，角度: 0.77°，点数: 6171, RMS: 1.82, 长度: 1280.14
+[2025-07-23 10:49:47.905] [lidar_logger] [info] 检测结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_10_49_47_2025_.jpg
+[2025-07-23 10:59:00.796] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 10:59:00.796] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 10:59:00.797] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 10:59:00.797] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 10:59:00.797] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 10:59:00.832] [lidar_logger] [info] 四边形ROI激光线端点检查: 端点1(321, 579) 在ROI内: 否, 端点2(1601, 596) 在ROI内: 否
+[2025-07-23 10:59:00.832] [lidar_logger] [warning] 四边形ROI激光线检测失败: Endpoints outside ROI (RMS: 1.82, 长度: 1280.14, 端点1在ROI内: 否, 端点2在ROI内: 否)
+[2025-07-23 10:59:00.865] [lidar_logger] [info] 失败结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_10_59_00_2025_.jpg
+[2025-07-23 10:59:00.867] [lidar_logger] [warning] 主检测流程：四边形ROI激光线检测失败，状态: 2
+[2025-07-23 11:06:51.464] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 11:06:51.464] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 11:06:51.464] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 11:06:51.464] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 11:06:51.464] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 11:06:51.502] [lidar_logger] [info] 四边形ROI激光线端点检查: 端点1(321, 579) 在ROI内: 否, 端点2(1601, 596) 在ROI内: 否
+[2025-07-23 11:06:51.502] [lidar_logger] [warning] 四边形ROI激光线检测失败: Both endpoints outside ROI (RMS: 1.82, 长度: 1280.14, 端点1在ROI内: 否, 端点2在ROI内: 否)
+[2025-07-23 11:06:51.532] [lidar_logger] [info] 失败结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_11_06_51_2025_.jpg
+[2025-07-23 11:06:51.534] [lidar_logger] [warning] 主检测流程：四边形ROI激光线检测失败，状态: 2
+[2025-07-23 11:09:03.985] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 11:09:03.986] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 11:09:03.986] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 11:09:03.986] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 11:09:03.986] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 11:09:04.026] [lidar_logger] [info] 四边形ROI激光线端点检查: 端点1(321, 579) 在ROI内: 否, 端点2(1601, 596) 在ROI内: 否
+[2025-07-23 11:09:04.026] [lidar_logger] [warning] 四边形ROI激光线检测失败: Both endpoints outside ROI (RMS: 1.82, 长度: 1280.14, 端点1在ROI内: 否, 端点2在ROI内: 否)
+[2025-07-23 11:09:04.056] [lidar_logger] [info] 失败结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_11_09_04_2025_.jpg
+[2025-07-23 11:09:04.058] [lidar_logger] [warning] 主检测流程：四边形ROI激光线检测失败，状态: 2
+[2025-07-23 11:12:52.673] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 11:12:52.674] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 11:12:52.674] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 11:12:52.674] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 11:12:52.674] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 11:12:52.708] [lidar_logger] [info] 四边形ROI激光线检测成功，角度: 0.77°，点数: 6171, RMS: 1.82, 长度: 1280.14
+[2025-07-23 11:12:52.761] [lidar_logger] [info] 检测结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_11_12_52_2025_.jpg
+[2025-07-23 11:21:46.897] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 11:21:46.897] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 11:21:46.897] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 11:21:46.897] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 11:21:46.897] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 11:21:46.935] [lidar_logger] [info] 激光线质量评估: 连续性=0.746, 强度=0.969, 直线度=0.636, 完整性=1.000, 综合评分=0.838
+[2025-07-23 11:21:46.935] [lidar_logger] [info] 激光线分布分析: 覆盖率=1.000, 密度=0.083, 均匀性=0.107
+[2025-07-23 11:21:46.935] [lidar_logger] [warning] 激光线检测失败: Distribution: 1.000000 (RMS: 1.82, 长度: 1280.14, 质量评分: 0.838, 覆盖率: 1.000)
+[2025-07-23 11:21:46.970] [lidar_logger] [info] 失败结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_11_21_46_2025_.jpg
+[2025-07-23 11:21:46.973] [lidar_logger] [warning] 主检测流程：四边形ROI激光线检测失败，状态: 2
+[2025-07-23 11:25:37.059] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 11:25:37.059] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 11:25:37.059] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 11:25:37.059] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 11:25:37.059] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 11:25:37.094] [lidar_logger] [info] 激光线质量评估: 连续性=0.746, 强度=0.969, 直线度=0.636, 完整性=1.000, 综合评分=0.838
+[2025-07-23 11:25:37.094] [lidar_logger] [info] 激光线分布分析: 覆盖率=1.000, 密度=0.083, 均匀性=0.107
+[2025-07-23 11:25:37.094] [lidar_logger] [info] 四边形ROI激光线检测成功，角度: 0.77°，点数: 6171, RMS: 1.82, 长度: 1280.14
+[2025-07-23 11:25:37.134] [lidar_logger] [info] 检测结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_11_25_37_2025_.jpg
+[2025-07-23 11:27:28.616] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 11:27:28.616] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 11:27:28.616] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 11:27:28.616] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 11:27:28.616] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 11:27:28.653] [lidar_logger] [info] 激光线质量评估: 连续性=0.746, 强度=0.969, 直线度=0.636, 完整性=1.000, 综合评分=0.838
+[2025-07-23 11:27:28.653] [lidar_logger] [info] 激光线分布分析: 覆盖率=1.000, 密度=0.083, 均匀性=0.107
+[2025-07-23 11:27:28.653] [lidar_logger] [info] 四边形ROI激光线检测成功，角度: 0.77°，点数: 6171, RMS: 1.82, 长度: 1280.14
+[2025-07-23 11:27:28.695] [lidar_logger] [info] 检测结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_11_27_28_2025_.jpg
+[2025-07-23 11:29:50.275] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 11:29:50.275] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 11:29:50.275] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 11:29:50.275] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 11:29:50.275] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 11:29:50.305] [lidar_logger] [info] 四边形ROI激光线检测成功，角度: 0.77°，点数: 6171, RMS: 1.82, 长度: 1280.14
+[2025-07-23 11:29:50.334] [lidar_logger] [info] 检测结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_11_29_50_2025_.jpg
+[2025-07-23 11:36:41.803] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 11:36:41.803] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 11:36:41.804] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 11:36:41.804] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 11:36:41.804] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 11:36:41.841] [lidar_logger] [info] 四边形ROI激光线检测成功，角度: 0.77°，点数: 6171, RMS: 1.82, 长度: 1280.14
+[2025-07-23 11:36:41.871] [lidar_logger] [info] 检测结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_11_36_41_2025_.jpg
+[2025-07-23 11:38:18.742] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 11:38:18.742] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 11:38:18.743] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 11:38:18.743] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 11:38:18.743] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 11:38:18.774] [lidar_logger] [warning] 激光点分布不线性或长度不足，RMS: 1.5206866192827726, 长度: 736.9997863769531, ROI宽度: 1282.0659109421792
+[2025-07-23 11:38:18.804] [lidar_logger] [info] 失败结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_11_38_18_2025_.jpg
+[2025-07-23 11:38:18.805] [lidar_logger] [warning] 主检测流程：四边形ROI激光线检测失败，状态: 2
+[2025-07-23 16:07:04.608] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 16:07:04.608] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 16:07:04.609] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 16:07:04.609] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 16:07:04.609] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 16:07:04.651] [lidar_logger] [info] 四边形ROI激光线检测成功，角度: 0.77°，点数: 6171, RMS: 1.82, 长度: 1280.14
+[2025-07-23 16:07:04.679] [lidar_logger] [info] 检测结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_16_07_04_2025_.jpg
+[2025-07-23 16:10:21.129] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 16:10:21.130] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 16:10:21.130] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 16:10:21.130] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 16:10:21.130] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 16:10:21.159] [lidar_logger] [info] 四边形ROI激光线检测成功，角度: 0.77°，点数: 6171, RMS: 1.82, 长度: 1280.14
+[2025-07-23 16:10:21.161] [lidar_logger] [info] 左端点y: 579, 右端点y: 596
+[2025-07-23 16:10:21.187] [lidar_logger] [info] 检测结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_16_10_21_2025_.jpg
+[2025-07-23 16:18:49.686] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 16:18:49.686] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 16:18:49.687] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 16:18:49.687] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 16:18:49.687] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 16:18:49.718] [lidar_logger] [info] 左端点y: 579, 右端点y: 596
+[2025-07-23 16:18:49.744] [lidar_logger] [info] 检测结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_16_18_49_2025_.jpg
+[2025-07-23 16:18:49.745] [lidar_logger] [info] 四边形ROI激光线检测成功，角度: 0.77°，点数: 6171, RMS: 1.82, 长度: 1280.14
+[2025-07-23 16:25:40.919] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 16:25:40.919] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 16:25:40.919] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 16:25:40.919] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 16:25:40.919] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 16:25:40.950] [lidar_logger] [info] 左端点y: 579, 右端点y: 596
+[2025-07-23 16:25:40.978] [lidar_logger] [info] 检测结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_16_25_40_2025_.jpg
+[2025-07-23 16:25:40.979] [lidar_logger] [info] 四边形ROI激光线检测成功，角度: 0.77°，点数: 6171, RMS: 1.82, 长度: 1280.14
+[2025-07-23 16:29:35.351] [lidar_logger] [info] 开始主检测流程
+[2025-07-23 16:29:35.351] [lidar_logger] [info] 开始读取四边形ROI配置文件: D:\OpenCV\Code\PV31\config\ROI_CONFIG.ini
+[2025-07-23 16:29:35.352] [lidar_logger] [info] 四边形ROI配置读取成功: X1(322,548), X2(1601,587), X3(1604,632), X4(322,619)
+[2025-07-23 16:29:35.352] [lidar_logger] [info] 使用四边形ROI进行检测
+[2025-07-23 16:29:35.352] [lidar_logger] [info] 开始四边形ROI激光线检测
+[2025-07-23 16:29:35.385] [lidar_logger] [info] 左端点y: 579, 右端点y: 596
+[2025-07-23 16:29:35.411] [lidar_logger] [info] 检测结果图像已保存: D:/OpenCV/Code/PV31/output/result_123456_Wed_Jul_23_16_29_35_2025_.jpg
+[2025-07-23 16:29:35.412] [lidar_logger] [info] 四边形ROI激光线检测成功，角度: 0.77°，点数: 6171, RMS: 1.82, 长度: 1280.14
